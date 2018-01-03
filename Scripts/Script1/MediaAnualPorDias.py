@@ -64,7 +64,12 @@ joinRDD = linesNO2Acum.join(numDias)
 
 mediaAnual = joinRDD.map(lambda tupla: (tupla[0], round((tupla[1][0]/tupla[1][1]),2) ) )
 # ('fecha', media)
-
 mediaAnual = mediaAnual.sortByKey()
+
+# Convertir tuplas a formato CVS
+mediaAnual = mediaAnual.map(lambda tupla: tupla[0] + ',' + str( tupla[1]))
+# 'fecha', media
+
+#mediaAnual = mediaAnual.sortByKey()
 
 mediaAnual.saveAsTextFile("mediaDias2017")
