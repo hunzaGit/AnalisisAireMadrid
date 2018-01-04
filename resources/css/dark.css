@@ -1,0 +1,490 @@
+
+/*Global Styling*/
+body{
+    color:#666666;
+}
+
+
+
+/* Helper Classes & Shorcodes */
+
+.bglight{
+    background: #f5f5f5;
+}
+.bgdark{
+    background: #f2c900;
+}
+.bgdefault{
+    background: #515A5F;
+}
+.whitecolor{
+    color: #ffffff;
+}
+.darkcolor{
+    color: #515A5F;
+}
+.colorblack{
+    color: #232323;
+}
+
+
+/*sidebar search*/
+.widget_search .form-control {
+    border: 2px #e8ecf0 solid;
+}
+.widget_search .input-group-addon {
+    background: transparent;
+    border: 2px #e8ecf0 solid;
+    color: #f2c900;
+}
+.widget .media-body > a{
+    color: #515A5F;
+}
+
+
+/*Categories*/
+.category li {
+    border-bottom: 1px solid #e8ecf0;
+}
+.category li a{
+    color: #666666;
+}
+.category li a:hover, .category li a:focus,
+.widget .media-body > a:hover{
+    color: #f2c900;  
+}
+
+
+/*Tags*/
+ul.web_tags li a {
+    background: #f2c900;
+    color: #fff;
+}
+ul.web_tags li a::after {
+    background: #ffffff ;
+}
+
+/*Pagination*/
+.pager{
+    border-bottom: 2px solid #ebebeb;
+}
+.pager li > a {
+    background: rgba(0, 0, 0, 0);
+    color: #999999;
+}
+.pager li > a:before{
+    background: #f2c900;
+}
+
+.pager li > a:hover,
+.pager li > a:focus,
+.pager li.active > a{
+    color: #f2c900;
+    background: transparent;
+}
+
+/*Comment Profile*/
+.eny_profile {
+    border-bottom: 1px solid #e4e4e4;
+}
+/* Social Icons */
+ul.social li a{
+    border:1px solid #bdbdbd;
+    color:#151515;
+}
+ul.social li a:before{
+    background:#515A5F;
+}
+
+ul.social li a:hover,
+ul.social li a:focus{
+	color:#fff;
+}
+ul.social_vertical li a{
+    color: #515A5F;
+}
+ul.social.white li a{
+    border:1px solid #fff;
+}
+ul.social_simple.white li a,
+ul.social.white li a{
+    color: #fff;
+}
+ul.social_simple li a:hover,
+ul.social_simple li a:focus,
+ul.social_vertical li a:hover,
+ul.social_vertical li a:focus,
+.topbar .topbar_inner span > a:hover,
+.topbar .topbar_inner span > a:focus{
+    color: #f2c900;
+}
+
+
+.back-top {
+  background:#515A5F;
+  color:#fff;
+}
+
+.back-top:hover, .back-top:focus{
+	color:#fff;
+}
+
+
+/* Helper Classes ends */
+
+
+/* Buttons */
+
+.button.dark, .button.light{
+    color: #ffffff;
+}
+.button.dark{
+    background: #515A5F;
+}
+.button.light{
+    background: #f2c900;
+}
+
+/* hover */
+.button.light:before{
+    background: #515A5F;
+}
+.button.light:hover,
+.button.light:focus{
+    border: 2px solid #515A5F;
+}
+.button.dark:before{
+     background: #f2c900;
+}
+.button.dark:hover, 
+.button.dark:focus{
+    border: 2px solid #f2c900;
+}
+#maxo-main .button.light:before{
+    background: #515A5F;
+}
+#maxo-main .button.light:hover,
+#maxo-main .button.light:focus{
+    color: #fff;
+    border:2px solid #515A5F;
+}
+
+
+/* Some Short Codes or helper classes */
+
+
+
+/* ------ Headers Starts ------ */
+
+header.default nav.navbar.bootsnav.navbar-fixed{
+    background: transparent;
+}
+header.default .bootsnav.fixedmenu{
+    background: #515A5F !important;
+}
+
+nav.navbar.bootsnav .navbar-toggle {
+    color: #fff;
+}
+
+header.default nav.navbar.bootsnav.navbar-fixed ul.nav > li > a{
+    color: #515A5F;
+}
+header.default nav.navbar.bootsnav ul.nav > li > a,
+header.default .bootsnav.fixedmenu ul.nav > li > a,
+header.default nav.navbar.bootsnav.navbar-fixed.fixedmenu ul.nav > li > a{
+    color: #fff;
+}
+
+nav.navbar.bootsnav ul.nav > li > a:before,
+.cbp-l-filters .cbp-filter-item span:after,
+.overlay-menu ul.full-nav  li a:before{
+	background: #f2c900;
+}
+
+
+/*OVERLAY Menu*/
+.menu-icon span,
+.menu-icon span:before,
+.menu-icon span:after,
+header.default nav.navbar.bootsnav.navbar-fixed .menu-icon span,
+header.default nav.navbar.bootsnav.navbar-fixed .menu-icon span:before,
+header.default nav.navbar.bootsnav.navbar-fixed .menu-icon span:after{
+    background: #515A5F;
+}
+
+header.default nav.navbar.bootsnav.navbar-fixed.fixedmenu .menu-icon span,
+header.default nav.navbar.bootsnav.navbar-fixed.fixedmenu .menu-icon span:before,
+header.default nav.navbar.bootsnav.navbar-fixed.fixedmenu .menu-icon span:after{
+    background: #fff;
+}
+
+.overlay-menu {
+  color: #515A5F;
+}
+.overlay-menu ul.full-nav li {
+	background: #f5f5f5;
+}
+.overlay-menu ul.full-nav li > span {
+	color: #515A5F;
+}
+.overlay-menu ul.full-nav  li a{
+    color: #515A5F;
+}
+
+
+/*-----  Headers Ends ------ */
+
+
+
+/* ------ main Slider Starts ------ */
+
+/*Bullets
+Swiper & Revotion*/
+.tp-bullet,
+.swiper-pagination-bullet{
+    background: #515A5F;
+}
+.tp-bullet:hover,
+.tp-bullet.selected,
+.swiper-pagination-bullet:hover,
+.swiper-pagination-bullet-active{
+    background: #f2c900;
+}
+
+/* ------ main Slider ends ------ */
+
+
+/* ------ Swiper slider ------ */
+
+
+/*Testimonial & Latest News*/
+.testimonial .testimonial_slide .photo {
+    border: 3px solid #515A5F;
+}
+.ivydatedate{
+    color: #515A5F;
+}
+.ivydatedate:hover, .ivydatedate:focus{
+    color: #fff;
+    background: #f2c900;
+}
+.updates .latest_updates .update_text h6:hover a,
+.updates .latest_updates .update_text h6:focus a{
+    color: #515A5F;
+}
+
+/*Tweets*/
+.tweet_box .twee_inner p > a{
+    color: #515A5F;
+}
+.tweet_box .twittername:hover,
+.tweet_box .twee_inner p > a:hover{
+    color: #f2c900;
+}
+/* ------ Swiper Slider ends ------ */
+
+
+/* ------ POrtfolio starts ------ */
+.overlay,
+.overlay .likeus{
+    background: rgba(242,201,0,.8);
+}
+
+/*Filters*/
+.cbp-l-filters .cbp-filter-item span {
+    color: #515A5F;
+}
+.cbp-item .text_wrap{
+    color: #202020;
+}
+.cbp-item .text_wrap p{
+    color: transparent;
+}
+/*PopUp*/
+.fancybox-thumbs > ul > li::before {
+  border: 4px solid #515A5F;
+}
+
+/* ------ Portfolio ends ------ */
+
+
+
+/* ------ Page Header starts ------ */
+
+.breadcrumb{
+    background: transparent;
+}
+.breadcrumb li,
+.breadcrumb li a{
+    color: #fff;
+}
+.breadcrumb li a:hover{
+    color: #f2c900;
+}
+/* ------ Page Header ends ------ */
+
+
+/* ------ Parallax  & Bg starts ------ */
+.parallax h2 i{
+    color: #9c9c9c;
+}
+.parallax.parallax-bg p{
+    color: #f2c900;
+}
+
+/* ------ Parallax starts ------ */
+
+
+
+/* ------ Features ------ */
+
+.icon_wrap .icon_box i{
+  color:#f2c900; 
+}
+.icon_wrap .icon_box:hover i, .icon_wrap .icon_box:hover p{
+	color:#fff;
+}
+.icon_wrap .icon_box:hover{
+	background:#f2c900;
+	color:#fff;
+}
+
+/* ------ Features ends ------ */
+
+
+/* ------ Our Team ------ */
+.ourteam .team_caption {
+    background: #515A5F;
+}
+.team_caption .overlay {
+    background: #f2c900; 
+}
+.ourteam .social_vertical {
+    background: #ffffff;
+}
+
+/* ------ Our Team ------ */
+
+
+/* ------ Our Blog ------ */
+
+.ourblog:hover h3 a,
+.readmore, .blog_item:hover h3 a{
+    color: #f2c900;
+}
+.blog_slider .blog_inner {
+    background: rgba(66, 217, 288, 0.9);
+    color: #ffffff;
+}
+
+.blog_author.borderleft .metas > i,
+.blog_author.borderleft .authorname a,
+.blog_author.flat .metas > i,
+.blog_author.flat .authorname a{
+    color: #515A5F;
+}
+
+.postanchor{
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    position: relative;
+}
+
+.postanchor .previous > a,
+.postanchor .nextpost > a{
+    color: #515A5F;
+}
+
+.postanchor .share {
+    color: #ffffff;
+}
+.share_purpose, .share_purpose::before {
+    background: #f2c900;
+}
+.share_purpose .social_simple li a{
+    border-left: 1px solid #62d3db;
+}
+.share_purpose .social_simple li a:hover{
+    color: #515A5F;
+}
+
+/* ------ Our Blog ------ */
+
+
+/* ------ Pricings ------ */
+
+.pricing_item.active{
+    background: #f2c900;
+    color: #fff;
+}
+.pricing_item.active p,
+.pricing_item.active .darkcolor{
+    color: #fff;
+}
+.pricing_item .pricebox{
+    border-bottom: 1px solid #e6e1e1;
+}
+.pricebox .price_title .ratings i{
+    color: #f2c900;
+}
+.pricing_item  .availability:before{
+    color: #515A5F;
+}
+.pricing_item.active  .availability:before{
+    color: #ffffff;
+}
+.pricing_item.active .button.light{
+    background: #ffffff;
+    color: #515A5F;
+}
+.pricing_item.active .button.light:hover, 
+.pricing_item.active .button.light:focus {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+.pricing_item.active .button.light:before{
+    background: #f2c900;
+}
+/* ------ Pricings ends ------ */
+
+
+
+/* ------ Contact Us starts ------ */
+
+/* ------ Contact Us ends ------ */
+
+
+/*Loader*/
+.dot1{
+	background-color: #f2c900;
+}	
+.dot2 {
+  background-color: #515A5F;
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+    /*Header*/
+    header.default nav.navbar.bootsnav.navbar-fixed{
+        background: #515A5F;
+    }
+    nav.navbar.bootsnav ul.nav > li{
+        margin: 0;
+    }
+    header.default nav.navbar.bootsnav.navbar-fixed ul.nav > li > a{
+        color: #fff;
+    }
+    .menu-icon span, .menu-icon span:before, .menu-icon span:after,
+    header.default nav.navbar.bootsnav.navbar-fixed.fixedmenu .menu-icon span,
+    header.default nav.navbar.bootsnav.navbar-fixed.fixedmenu .menu-icon span:before,
+    header.default nav.navbar.bootsnav.navbar-fixed.fixedmenu .menu-icon span:after,
+    header.default nav.navbar.bootsnav.navbar-fixed .menu-icon span,
+    header.default nav.navbar.bootsnav.navbar-fixed .menu-icon span:before,
+    header.default nav.navbar.bootsnav.navbar-fixed .menu-icon span:after{
+        background: #f2c900;
+    }
+    
+}
