@@ -3,6 +3,10 @@
     font-size: 50px !important;
 }
 
+#divTitulo{
+    width: 100% !important;
+}
+
 #titulo > span{
     font-size: 42px !important;
 }
@@ -12,6 +16,30 @@
     font-weight: 300 !important;
     font-size: 21px !important;
     color: #e2e2e2 !important;
-    margin: 300px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    padding: 28% 0px 0px 0px;
+    top: 5%;
 
+}
+
+#maxo-testimonials{
+    background-color: rgba(212, 212, 212, 1) !important;
+    /*background: url("../images/bgfull-1.jpg") no-repeat; style.css:1447   */
+
+}
+
+.tp-parallax-wrap{
+    top: 200px !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #titulo {
+        /*width: 246px;*/
+    }
+    #integrantes > li{
+
+        padding: 2% 0px 0px 0px;
+
+    }
 }

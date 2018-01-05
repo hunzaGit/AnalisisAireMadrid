@@ -1,0 +1,93 @@
+body {
+    /*width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;*/
+    /*margin: 0px;
+    background-color: #e2e2e2 !important;
+    */
+}
+
+:root{
+    --ancho-frame: 1200px;/*1200*/
+    --alto-frame: 324px;/*324*/
+    --mitad-frame: 600px;
+    --porcentaje-extra-barra: 5%;
+    --tamano-barra: calc(calc(calc(var(--alto-frame) * 0.05 )*2) + var(--alto-frame)); /* (var(--alto-frame) * var(--porcentaje-extra-barra) )*2 + var(--alto-frame)*/
+}
+#scrubber{
+    width: var(--ancho-frame);
+    height: var(--alto-frame);
+    margin: auto;
+}
+
+.scrubber-window {
+    width: var(--ancho-frame);
+    height: var(--alto-frame);
+    position: relative;
+    display: inline-block;
+    /*margin: -337px 0px 0px -145px*/
+}
+
+.scrubber-window .scrubber-bar {
+    position: absolute;
+    /*height: 110%;*/
+    height: var(--tamano-barra);
+    width: 1px;
+    left: 50%;
+    top: -5%;
+    border-radius: 4px;
+    /*background: rgba(250, 250, 250, 0.7);*/
+    background: black;
+    z-index: 100;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: visible;
+}
+
+.scrubber-window .scrubber-bar:hover {
+    background: black; /*#fafafa;*/
+}
+
+.scrubber-window .scrubber-derecha, .scrubber-window .scrubber-izquierda {
+    /*margin: -250px 0 0 -250px;*/
+    width: var(--ancho-frame);
+    height: var(--alto-frame);
+    position: absolute;
+    overflow: hidden;
+}
+
+.scrubber-window .scrubber-derecha div, .scrubber-window .scrubber-izquierda div {
+    /*margin: -250px 0 0 -250px;*/
+    width: var(--ancho-frame);
+    height: var(--alto-frame);
+    overflow: hidden;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.scrubber-window .scrubber-derecha {
+    right: 0px;
+    width: var(--mitad-frame);
+}
+
+.scrubber-window .scrubber-derecha div {
+    right: 0px;
+    width: var(--ancho-frame);
+    /*background-image: url(https://unsplash.it/500/400?image=20);*/
+    background-image: url("../images/Graficas/Grafica1.png");
+    background-size: 100%;
+}
+
+.scrubber-window .scrubber-izquierda {
+    width: var(--mitad-frame);
+}
+
+.scrubber-window .scrubber-izquierda div {
+    width: var(--ancho-frame);
+    /*background-image: url(https://unsplash.it/500/400?image=23);*/
+    background-image: url("../images/Graficas/Grafica2.png");
+    background-size: 100%;
+}

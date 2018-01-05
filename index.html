@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="resources/css/dark.css">
     <link rel="stylesheet" type="text/css" href="resources/css/estilo.css">
     <link rel="icon" href="resources/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="resources/css/scrubber.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 ANNA DEMOSTHENOUS and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -131,7 +132,7 @@
                 <img src="resources/images/Madrid/8108693.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
                      data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
                 <!-- LAYER NR. 1 -->
-                <div class="tp-caption tp-resizeme darkcolor text-center" data-x="['center','center','center','center']"
+                <div id="divTitulo" class="tp-caption tp-resizeme darkcolor text-center " data-x="['center','center','center','center']"
                      data-hoffset="['0','0','0','0']" data-y="['227','227','227','227']"
                      data-voffset="['0','0','0','0']" data-whitespace="nowrap" data-transform_idle="o:1;"
                      data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
@@ -139,8 +140,8 @@
                      data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="none"
                      data-splitout="none" data-responsive_offset="on">
                     <h1 id="titulo" class="text-captilize text-center">
-                        <strong>Estudio sobre la contaminación y la calidad del aire</strong>
-                        <span>  Proyecto Cloud and Big Data - UCM Curso 2017-2018 </span>
+                        <strong>Estudio sobre la contaminación <br>y <br>la calidad del aire</strong>
+                        <span>  Proyecto Cloud and Big Data <br> UCM Curso 2017-2018 </span>
                     </h1>
                     <ul id="integrantes">
                         <li>César Godino</li>
@@ -170,57 +171,21 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center">
-                <p class="title bottom0">Lorem ipsum sit</p>
-                <h2 class="text-captalize darkcolor bottom30">Explore Features</h2>
+                <h2 class="text-captalize darkcolor bottom30">Análisis NO2 de Madrid en 2017</h2>
             </div>
             <div class="icon_wrap text-center clearfix">
-                <div class="col-sm-4 top30">
-                    <div class="icon_box">
-                        <i class="fa fa-pencil-square-o"></i>
-                        <h4 class="text-capitalize bottom15">Unlimited Features</h4>
-                        <p class="no_bottom">Keep away from people who try to belittle your ambitions. Small people
-                            always do that but the really Keep away from people great.</p>
+                <div class="col-sm-12 top30">
+                    <div class="">
+                        <iframe id="datawrapper-chart-03jtJ" src="https://datawrapper.dwcdn.net/03jtJ/1/" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" style="width: 0; min-width: 100% !important;" height="500"></iframe>
+                        <script type="text/javascript">
+                            if ("undefined" == typeof window.datawrapper) window.datawrapper = {};
+                            window.datawrapper["03jtJ"] = {}, window.datawrapper["03jtJ"].embedDeltas = { "100": 600, "200": 550, "300": 525, "400": 500, "500": 500, "600": 500, "700": 500, "800": 500, "900": 500, "1000": 500 }, window.datawrapper["03jtJ"].iframe = document.getElementById("datawrapper-chart-03jtJ"), window.datawrapper["03jtJ"].iframe.style.height = window.datawrapper["03jtJ"].embedDeltas[Math.min(1e3, Math.max(100 * Math.floor(window.datawrapper["03jtJ"].iframe.offsetWidth / 100), 100))] + "px", window.addEventListener("message", function(a) { if ("undefined" != typeof a.data["datawrapper-height"])
+                                for (var b in a.data["datawrapper-height"])
+                                    if ("03jtJ" == b) window.datawrapper["03jtJ"].iframe.style.height = a.data["datawrapper-height"][b] + "px" });
+                        </script>
+
                     </div>
-                </div>
-                <div class="col-sm-4 top30">
-                    <div class="icon_box border_radius">
-                        <i class="fa fa-umbrella"></i>
-                        <h4 class="text-capitalize bottom15">Creative Design</h4>
-                        <p class="no_bottom">Keep away from people who try to belittle your ambitions. Small people
-                            always do that but the really Keep away from people great.</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 top30">
-                    <div class="icon_box border_radius">
-                        <i class="fa fa-laptop"></i>
-                        <h4 class="text-capitalize bottom15">Responsive Design</h4>
-                        <p class="no_bottom">Keep away from people who try to belittle your ambitions. Small people
-                            always do that but the really Keep away from people great.</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 top30">
-                    <div class="icon_box border_radius">
-                        <i class="fa fa-pencil-square-o"></i>
-                        <h4 class="text-capitalize bottom15">Unlimited Features</h4>
-                        <p class="no_bottom">Keep away from people who try to belittle your ambitions. Small people
-                            always do that but the really Keep away from people great.</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 top30">
-                    <div class="icon_box border_radius">
-                        <i class="fa fa-umbrella"></i>
-                        <h4 class="text-capitalize bottom15">Creative Design</h4>
-                        <p class="no_bottom">Keep away from people who try to belittle your ambitions. Small people
-                            always do that but the really Keep away from people great.</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 top30">
-                    <div class="icon_box border_radius">
-                        <i class="fa fa-laptop"></i>
-                        <h4 class="text-capitalize bottom15">Responsive Design</h4>
-                        <p class="no_bottom">Keep away from people who try to belittle your ambitions. Small people
-                            always do that but the really Keep away from people great.</p>
-                    </div>
+                    <h3>Como se puede observar en la grafica los niveles de contaminacion descienden considreablamente en la epco de verano, segiuramente poor ser el periodo de vaciciones y haber menor cantidad de gente en la ciudad</h3>
                 </div>
             </div>
         </div>
@@ -235,20 +200,29 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-1 col-md-2"></div>
-                <div class="col-sm-10 col-md-8 darkcolor">
-                    <h2 class="text-captalize heading_space">Maxo is Creative</h2>
+                <div class="col-sm-12 col-md-12 darkcolor">
+                    <h2 class="text-captalize heading_space">Comparación  por Zonas</h2>
                     <div class="testimonial center">
-                        <div class="testimonial_slide">
-                            <span class="photo bottom25"><img src="resources/images/testimonial1.png" alt=""> </span>
-                            <div class="signature bottom25">
-                                <h6>Sandra Wilson</h6>
-                                <span>AB DESIGN STUDIOS</span>
+                        <!--
+                        <iframe id="datawrapper-chart-d8tv6" src="https://datawrapper.dwcdn.net/d8tv6/2/" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" style="width: 0; min-width: 100% !important;" height="500"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["d8tv6"]={},window.datawrapper["d8tv6"].embedDeltas={"100":625,"200":550,"300":525,"400":525,"500":500,"600":500,"700":500,"800":500,"900":500,"1000":500},window.datawrapper["d8tv6"].iframe=document.getElementById("datawrapper-chart-d8tv6"),window.datawrapper["d8tv6"].iframe.style.height=window.datawrapper["d8tv6"].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper["d8tv6"].iframe.offsetWidth/100),100))]+"px",window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("d8tv6"==b)window.datawrapper["d8tv6"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script>
+                        -->
+                        <div id="contenedorScrubber">
+                            <div id=scrubber>
+                                <div class='scrubber-window'>
+                                    <div class='scrubber-bar'>
+                                    </div>
+                                    <div class='scrubber-derecha'>
+                                        <div></div>
+                                    </div>
+                                    <div class='scrubber-izquierda'>
+                                        <div></div>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="bottom0 top15 darkcolor">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Nam lobortis eget nibh et lobortis. Nulla in odio quis augue ultrices blandit. Phasellus
-                                ipsum nibh, porta non sapien non, efficitur pulvinar neque. Pellentesque aliquam, massa
-                                eu fringilla egestas, </p>
                         </div>
+                        <!--
+                        ****************************************************************************
+                        -->
                     </div>
                 </div>
                 <div class="col-sm-1 col-md-2"></div>
@@ -1027,7 +1001,7 @@
 <script src="resources/js/revolution.extension.kenburn.min.js"></script>
 <script src="resources/js/revolution.extension.video.min.js"></script>
 <script src="resources/js/functions.js"></script>
-
+<script src="resources/js/scrubber.js"></script>
 
 </body>
 

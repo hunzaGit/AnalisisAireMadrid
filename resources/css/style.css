@@ -1256,7 +1256,7 @@ Swiper & Revotion*/
 }
 .tweet_box .twee_inner::after {
     bottom: -21px;
-    content: url("../../images/tooltip.png");
+    content: url("../images/tooltip.png");
     display: block;
     height: 22px;
     left: 15px;
@@ -1429,12 +1429,12 @@ Swiper & Revotion*/
     width: 50%;
 }
 .bg .bghalf.imgone{
-    background: url("../../images/bghalf-1.jpg") no-repeat;
+    background: url("../images/bghalf-1.jpg") no-repeat;
     left: 0;
     background-position: left center;
 }
 .bg .bghalf.imgtwo{
-    background: url("../../images/bghalf-2.jpg") no-repeat;
+    background: url("../images/bghalf-2.jpg") no-repeat;
     right: 0;
     background-position: right center;
 }
@@ -1445,19 +1445,19 @@ Swiper & Revotion*/
     background-size: contain;
 }
 .bgfull-imgone{
-    background: url("../../images/bgfull-1.jpg") no-repeat;
+    /*background: url("../images/bgfull-1.jpg") no-repeat;*/
 }
 .bgfull-imgtwo{
-    background: url("../../images/bgfull-2.jpg") no-repeat;
+    background: url("../images/bgfull-2.jpg") no-repeat;
 }
 .parallax-bg{
-    background: url("../../images/parallax-bg.jpg") no-repeat;
+    background: url("../images/parallax-bg.jpg") no-repeat;
 }
 .page-header{
-    background: url("../../images/page-header.jpg") no-repeat;
+    background: url("../images/page-header.jpg") no-repeat;
 }
 #text-rotate{
-    background: url("../../images/banner8.jpg") no-repeat;
+    background: url("../images/banner8.jpg") no-repeat;
 }
 .parallax,
 #text-rotate{
@@ -1469,7 +1469,7 @@ Swiper & Revotion*/
     position: relative;
 }
 .bg5{
-     background: url("../../images/index5-banner.jpg") no-repeat !important;
+     background: url("../images/index5-banner.jpg") no-repeat !important;
 }
 .page-header {
     -webkit-background-size: contain;
