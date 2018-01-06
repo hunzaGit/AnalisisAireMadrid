@@ -22,6 +22,15 @@
 
 }
 
+#m-parallax2{
+    background-image: url('../images/Madrid/retencion copia.jpg') !important;
+    padding: 11em;
+}
+
+.negro{
+    background-color: #101010ba !important;
+}
+
 #maxo-testimonials{
     background-color: rgba(212, 212, 212, 1) !important;
     /*background: url("../images/bgfull-1.jpg") no-repeat; style.css:1447   */
@@ -38,8 +47,16 @@
 }
 
 
-.bloqueTexto, .bloqueTexto > li, .bloqueTexto > p{
+.bloqueTextoI, .bloqueTextoI > li, .bloqueTextoI > p{
     font-size: 16px;
+    text-align: left;
+    padding-right: 18em;
+}
+
+.bloqueTextoD, .bloqueTextoD > li, .bloqueTextoD > p{
+    font-size: 16px;
+    text-align: right;
+    padding-left: 18em;
 }
 
 #imagenTrafico{
