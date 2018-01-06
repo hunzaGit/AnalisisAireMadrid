@@ -32,6 +32,28 @@
     top: 200px !important;
 }
 
+.container{
+    padding: 0 90px 0 90px;
+    width: auto !important;
+}
+
+
+.bloqueTexto, .bloqueTexto > li, .bloqueTexto > p{
+    font-size: 16px;
+}
+
+#imagenTrafico{
+    padding: 0 0 0 3em ;
+}
+.padding{
+    padding: 5.5rem 2em 5.5rem 0;
+}
+
+ul{
+    padding: 0.5em 0 0.5em 2em;
+    list-style: initial;
+}
+
 
 @media only screen and (max-width: 600px) {
     #titulo {
