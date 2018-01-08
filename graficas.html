@@ -3,15 +3,29 @@
 
 <head>
     <title></title>
-    <link rel="stylesheet" type="text/css" href="scrubber.css">
-    <script src="scrubber.js"></script>
+
 </head>
 
 <body>
-    
+<script>
+
+    function boton1() {
+        document.getElementById("generales").style.display = 'block';
+        document.getElementById("estaciones").style.display = 'none';
+    }
+    function boton2() {
+        document.getElementById("generales").style.display = 'none';
+        document.getElementById("estaciones").style.display = 'block';
+    }
+
+
+
+</script>
+    <button id="boton1" onclick="boton1()" >Gráficas Generales</button>
+    <button id="boton2" onclick="boton2()">Graficas estaciones</button>
     <br>
     <br>
-    <div>
+    <div id="generales" style="display: none">
         <iframe id="datawrapper-chart-03jtJ" src="https://datawrapper.dwcdn.net/03jtJ/2/" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" style="width: 0; min-width: 100% !important;" height="500"></iframe>
         <script type="text/javascript">
         if ("undefined" == typeof window.datawrapper) window.datawrapper = {};
@@ -33,6 +47,22 @@
         </script>
         <br><br>
         <iframe id="datawrapper-chart-mFymx" src="https://datawrapper.dwcdn.net/mFymx/1/" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" style="width: 0; min-width: 100% !important;" height="600"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["mFymx"]={},window.datawrapper["mFymx"].embedDeltas={"100":725,"200":650,"300":625,"400":625,"500":625,"600":600,"700":600,"800":600,"900":600,"1000":600},window.datawrapper["mFymx"].iframe=document.getElementById("datawrapper-chart-mFymx"),window.datawrapper["mFymx"].iframe.style.height=window.datawrapper["mFymx"].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper["mFymx"].iframe.offsetWidth/100),100))]+"px",window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("mFymx"==b)window.datawrapper["mFymx"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script>
+        <br><br>
+    </div>
+        <hr>
+<hr>
+    <div id="estaciones">
+        <br><br>
+        <iframe id="datawrapper-chart-qHjKS" src="https://datawrapper.dwcdn.net/qHjKS/2/" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" style="width: 0; min-width: 100% !important;" height="500"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["qHjKS"]={},window.datawrapper["qHjKS"].embedDeltas={"100":625,"200":550,"300":525,"400":525,"500":525,"600":500,"700":500,"800":500,"900":500,"1000":500},window.datawrapper["qHjKS"].iframe=document.getElementById("datawrapper-chart-qHjKS"),window.datawrapper["qHjKS"].iframe.style.height=window.datawrapper["qHjKS"].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper["qHjKS"].iframe.offsetWidth/100),100))]+"px",window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("qHjKS"==b)window.datawrapper["qHjKS"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script>
+        <br><br>
+        <iframe id="datawrapper-chart-5W4GZ" src="https://datawrapper.dwcdn.net/5W4GZ/3/" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" style="width: 0; min-width: 100% !important;" height="500"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["5W4GZ"]={},window.datawrapper["5W4GZ"].embedDeltas={"100":625,"200":550,"300":525,"400":525,"500":500,"600":500,"700":500,"800":500,"900":500,"1000":500},window.datawrapper["5W4GZ"].iframe=document.getElementById("datawrapper-chart-5W4GZ"),window.datawrapper["5W4GZ"].iframe.style.height=window.datawrapper["5W4GZ"].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper["5W4GZ"].iframe.offsetWidth/100),100))]+"px",window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("5W4GZ"==b)window.datawrapper["5W4GZ"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script>
+        <br><br>
+        <iframe id="datawrapper-chart-C7RBY" src="https://datawrapper.dwcdn.net/C7RBY/2/" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" style="width: 0; min-width: 100% !important;" height="500"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["C7RBY"]={},window.datawrapper["C7RBY"].embedDeltas={"100":625,"200":550,"300":525,"400":525,"500":500,"600":500,"700":500,"800":500,"900":500,"1000":500},window.datawrapper["C7RBY"].iframe=document.getElementById("datawrapper-chart-C7RBY"),window.datawrapper["C7RBY"].iframe.style.height=window.datawrapper["C7RBY"].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper["C7RBY"].iframe.offsetWidth/100),100))]+"px",window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("C7RBY"==b)window.datawrapper["C7RBY"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script>
+        <br><br>
+        <iframe id="datawrapper-chart-YwwKO" src="https://datawrapper.dwcdn.net/YwwKO/2/" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" style="width: 0; min-width: 100% !important;" height="500"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["YwwKO"]={},window.datawrapper["YwwKO"].embedDeltas={"100":625,"200":550,"300":525,"400":525,"500":500,"600":500,"700":500,"800":500,"900":500,"1000":500},window.datawrapper["YwwKO"].iframe=document.getElementById("datawrapper-chart-YwwKO"),window.datawrapper["YwwKO"].iframe.style.height=window.datawrapper["YwwKO"].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper["YwwKO"].iframe.offsetWidth/100),100))]+"px",window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("YwwKO"==b)window.datawrapper["YwwKO"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script>
+        <br><br>
+        <iframe id="datawrapper-chart-Bu5rB" src="https://datawrapper.dwcdn.net/Bu5rB/2/" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" style="width: 0; min-width: 100% !important;" height="500"></iframe><script type="text/javascript">if("undefined"==typeof window.datawrapper)window.datawrapper={};window.datawrapper["Bu5rB"]={},window.datawrapper["Bu5rB"].embedDeltas={"100":625,"200":550,"300":525,"400":525,"500":500,"600":500,"700":500,"800":500,"900":500,"1000":500},window.datawrapper["Bu5rB"].iframe=document.getElementById("datawrapper-chart-Bu5rB"),window.datawrapper["Bu5rB"].iframe.style.height=window.datawrapper["Bu5rB"].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper["Bu5rB"].iframe.offsetWidth/100),100))]+"px",window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])for(var b in a.data["datawrapper-height"])if("Bu5rB"==b)window.datawrapper["Bu5rB"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});</script>
+        <br><br>
     </div>
 
 </body>
