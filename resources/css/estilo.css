@@ -3,6 +3,27 @@
     font-size: 50px !important;
 }
 
+body{
+
+}
+
+#features{
+    background-color: rgba(212, 212, 212, 1) !important;
+}
+#imgDistritos{
+    background-size: 50%;
+}
+
+
+#revo_main_wrapper{
+    /* background-image: url("../images/Madrid/DistritosGrande.png"); */
+    background-size: 40% !important;
+    background-repeat: no-repeat !important;
+    background-position: center;
+    background-color: #d4d4d4
+}
+
+
 #divTitulo{
     width: 100% !important;
 }
@@ -19,7 +40,7 @@
     margin: 0px 0px 0px 0px;
     padding: 28% 0px 0px 0px;
     top: 5%;
-
+    list-style: none;
 }
 
 #m-parallax2{
@@ -36,6 +57,7 @@
     /*background: url("../images/bgfull-1.jpg") no-repeat; style.css:1447   */
 
 }
+
 
 .tp-parallax-wrap{
     top: 200px !important;
@@ -63,7 +85,7 @@
     padding: 0 0 0 3em ;
 }
 .padding{
-    padding: 5.5rem 2em 5.5rem 0;
+    padding: 4.5rem 2em 4.5rem 0;
 }
 
 ul{
@@ -82,3 +104,72 @@ ul{
 
     }
 }
+
+#Distrito01{
+
+}
+
+#distrito1{
+    position: relative;
+    top: 310px;
+    right: 80px;
+    bottom: 0px;
+    left: 630px;
+    margin-right: 1395px;
+    z-index: 1000;
+}
+
+#distrito2{
+    position: relative;
+    top: 124px;
+    right: 80px;
+    bottom: 0px;
+    left: 600px;
+    margin-right: 1395px;
+    z-index: 10;
+}
+
+#distrito3{
+    position: relative;
+    top: 310px;
+    right: 80px;
+    bottom: 0px;
+    left: 630px;
+    margin-right: 1395px;
+    z-index: 100;
+}
+
+
+.distrito{
+    padding: 0.5em;
+    color: black;
+    z-index: 100;
+}
+
+.distrito:hover{
+    font-size: 23px !important;
+    padding: 0em;
+    color: red;
+    margin-top: 4px;
+}
+.map-content {
+    text-align: center;
+    margin: 0 auto;
+}
+.interactive-map {
+    width: 910px; /*500px*/
+    opacity: 1;
+    /*transform: rotate(-4deg);*/
+}
+
+
+
+/*
+#MapaInteractivo{
+    background-image: url('../images/Madrid/cap.png');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position-x: 64%;
+    background-position-y: 15%;
+}
+*/

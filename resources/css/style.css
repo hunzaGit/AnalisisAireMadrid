@@ -228,11 +228,11 @@ aside .widget h4{
 .cbp-item:hover img,
 .latest_updates:hover .updatephoto img,
 .image:hover img{
-	-moz-transform:scale(1.15);
+	/*-moz-transform:scale(1.15);
 	-ms-transform:scale(1.15);
 	-o-transform:scale(1.15);
 	-webkit-transform:scale(1.15);
-	transform:scale(1.15);
+	transform:scale(1.15);*/
 }
 
 /*to align elements*/

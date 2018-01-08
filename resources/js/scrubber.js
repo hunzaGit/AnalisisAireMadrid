@@ -10,7 +10,7 @@ const valorExceso = 120;
 var barX = 0;
 
 scrubberWindow.onmousemove = function (event) {
-    var ajustePunteroBarra = 25;
+    var ajustePunteroBarra = -13;
     // valor para ajustar el puntero con la barra se calcula poniendo el sobre el inicio del frame
     // haciendo coincidir con la barra. (el console.log('resta'...) indica el valor)
 
