@@ -7,14 +7,33 @@ $(document).ready(function() {
         dataType: 'json',
         success: function(data, textStatus, jqXHR) {
 
+            const unidadMedida = '<span>µ/m³ NO<sub>2</sub></span>';
+
 
             console.log(data);
 
-            console.log(parseFloat(data[28079004].valor));
 
-            console.log($('#28079004p'))
-            $('#28079004p').text(parseFloat(data[28079004].valor) + ' Mg/CO2')
+            Object.keys(data).forEach((idNum)=>{
+                //$('#'+ id + 'p').text(parseFloat(data[id].valor))
+                const id = '#'+ idNum + 'p';
+                const valor = parseFloat(data[idNum].valor);
+                console.log(id +' --> ' + valor);
+                $(id).text(valor + ' ');
+                $(id).append(unidadMedida)
+
+                if(valor >= 60){
+                    debugger;
+                    console.log(true);
+                    $('#'+ idNum).css('border-color','#F2350B');
+                }
+            });
+
+
+            //$('#28079004p').text(parseFloat(data[28079004].valor) + ' ');
+            //$('#28079004p').append(unidadMedida)
             //150 Mg/CO2
+
+
 
 
         },

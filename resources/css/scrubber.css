@@ -17,6 +17,7 @@ body {
     --porcentaje-extra-barra: 5%;
     --tamano-barra: calc(calc(calc(var(--alto-frame) * 0.05 )*2) + var(--alto-frame)); /* (var(--alto-frame) * var(--porcentaje-extra-barra) )*2 + var(--alto-frame)*/
 }
+
 #scrubber{
     width: var(--ancho-frame);
     height: var(--alto-frame);

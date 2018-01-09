@@ -7,8 +7,14 @@ body{
 
 }
 
-#features{
-    background-color: rgba(212, 212, 212, 1) !important;
+
+:root{
+    --background-gris: rgba(212, 212, 212, 0.4);
+
+}
+
+#SobreProyecto{
+    background-color: var(--background-gris) !important;
 }
 #imgDistritos{
     background-size: 50%;
@@ -16,11 +22,10 @@ body{
 
 
 #revo_main_wrapper{
-    /* background-image: url("../images/Madrid/DistritosGrande.png"); */
     background-size: 40% !important;
     background-repeat: no-repeat !important;
     background-position: center;
-    background-color: #d4d4d4
+    /* background-color: #d4d4d4*/
 }
 
 
@@ -43,7 +48,7 @@ body{
     list-style: none;
 }
 
-#m-parallax2{
+#m-parallaxTrafico{
     background-image: url('../images/Madrid/retencion copia.jpg') !important;
     padding: 11em;
 }
@@ -53,7 +58,7 @@ body{
 }
 
 #maxo-testimonials{
-    background-color: rgba(212, 212, 212, 1) !important;
+    background-color: var(--background-gris) !important;
     /*background: url("../images/bgfull-1.jpg") no-repeat; style.css:1447   */
 
 }
@@ -69,28 +74,33 @@ body{
 }
 
 
-.bloqueTextoI, .bloqueTextoI > li, .bloqueTextoI > p{
+.bloqueTexto, .bloqueTexto > li, .bloqueTexto > p{
     font-size: 16px;
-    text-align: left;
-    padding-right: 18em;
+    /*padding-right: 18em;*/
+    text-align: justify ;
+
+
 }
 
-.bloqueTextoD, .bloqueTextoD > li, .bloqueTextoD > p{
-    font-size: 16px;
-    text-align: right;
-    padding-left: 18em;
+.bloqueTexto > ul{
+    padding: 0.5em 0 0.5em 2em;
+    list-style: initial;
 }
+
+.text-right{
+    text-align: right;
+}
+
+.text-left{
+    text-align: left;
+}
+
 
 #imagenTrafico{
     padding: 0 0 0 3em ;
 }
 .padding{
     padding: 4.5rem 2em 4.5rem 0;
-}
-
-ul{
-    padding: 0.5em 0 0.5em 2em;
-    list-style: initial;
 }
 
 
@@ -162,6 +172,10 @@ ul{
     /*transform: rotate(-4deg);*/
 }
 
+#teamSlideContainer{
+   /* width: 919px;*/
+
+}
 
 
 /*

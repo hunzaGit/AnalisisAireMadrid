@@ -131,7 +131,7 @@ jQuery(function ($) {
     /* ------ Swiper Slider ------ */
 
     /*Page bannerr*/
-    $(".text-rotator").each(function () {
+    /*$(".text-rotator").each(function () {
         var $this = $(this);
         $this.find(".swiper-container").swiper({
             effect: "fade",
@@ -142,7 +142,7 @@ jQuery(function ($) {
             nextButton: $this.find(".swiper-button-next"),
             prevButton: $this.find(".swiper-button-prev"),
         });
-    });
+    });*/
 
 
     /*Blog*/
@@ -160,11 +160,11 @@ jQuery(function ($) {
         });
     });
 
-    /*Teams Slider with 4 slides*/
+    /*Teams Slider with 3 slides*/
     $(".ivy-team").each(function () {
         var $this = $(this);
         $this.find(".swiper-container").swiper({
-            slidesPerView: 4,
+            slidesPerView: 3,
             slidesPerColumn: 1,
             spaceBetween: 20,
             controlBy: "container",

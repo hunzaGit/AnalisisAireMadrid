@@ -30,7 +30,10 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    -->
+    <script src="resources/js/jquery/jquery-3.1.1.min.js"></script>
     <script src="resources/js/app.js"></script>
 </head>
 
@@ -74,10 +77,11 @@
                     <li class="active">
                         <a href="#home" class="scroll">Home</a></li>
                     <li><a href="#MapaInteractivo" class="scroll">Mapa Interactivo</a></li>
-                    <li><a href="#features" class="scroll">About us</a></li>
+                    <li><a href="#SobreProyecto" class="scroll">Sobre el proyecto</a></li>
                     <li><a href="#work" class="scroll"> Work</a></li>
                     <li><a href="#pricing" class="scroll">pricing</a></li>
                     <li><a href="#maxo_news" class="scroll"> news</a></li>
+                    <li><a href="#team" class="scroll">Team</a></li>
                     <li><a href="#maxo-blog" class="scroll">Blog</a></li>
                     <li><a href="#contactus" class="scroll">Contact</a></li>
                 </ul>
@@ -106,13 +110,14 @@
                             <span>01.</span> <a href="#home" class="scroll">Home</a>
                         </li>
                         <li><span>02.</span> <a href="#MapaInteractivo" class="scroll">Mapa Interactivo</a></li>
-                        <li><span>03.</span> <a href="#features" class="scroll">About us</a></li>
+                        <li><span>03.</span> <a href="#SobreProyecto" class="scroll">Sobre el proyecto</a></li>
                         <!-- <li><span>03.</span> <a href="#work" class="scroll"> Work</a></li> -->
                         <li><span>04.</span> <a href="#pricing" class="scroll">pricing</a></li>
                         <li><span>05.</span> <a href="#maxo_news" class="scroll"> news</a></li>
-                        <li><span>06.</span> <a href="#maxo-blog" class="scroll">Blog</a></li>
-                        <li><span>07.</span> <a href="#contactus" class="scroll">Contact</a></li>
-                        <li><span>08.</span> <a href="blog-detail.html">Blog Detail</a></li>
+                        <li><span>06.</span> <a href="#team" class="scroll">Team</a></li>
+                        <li><span>07.</span> <a href="#maxo-blog" class="scroll">Blog</a></li>
+                        <li><span>08.</span> <a href="#contactus" class="scroll">Contact</a></li>
+                        <li><span>09.</span> <a href="blog-detail.html">Blog Detail</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-12">
@@ -192,16 +197,25 @@
                         <div class="">
                             <h3 class="titulo-content">Farolillo (Carabanchel)</h3>
                             <div class="middle-line" ></div>
-                            <p class="info-content">150</p>
+                            <p class="info-content">150 <span>µ/m³ NO<sub>2</sub></span> </p>
                         </div>
                     </div>
                 </button>
-                <button id="28079004" class="map-point" style="top:63%;left:49%">
+                <button id="28079004" class="map-point" style="top:63%;left:48.6%">
                     <div class="content">
                         <div class="">
                             <h3 class="titulo-content">Plaza de España</h3>
                             <div class="middle-line" ></div>
                             <p id="28079004p" class="info-content"></p>
+                        </div>
+                    </div>
+                </button>
+                <button id="28079008" class="map-point" style="top:63.4%;left:50%">
+                    <div class="content">
+                        <div class="">
+                            <h3 class="titulo-content">Escuelas Aguirre</h3>
+                            <div class="middle-line" ></div>
+                            <p id="28079008p" class="info-content"></p>
                         </div>
                     </div>
                 </button>
@@ -212,16 +226,36 @@
 <!--MapaInteractivo ends-->
 
 
+<!--Parallax-->
+<section id="m-parallaxTrafico" class="parallax-bg parallax padding negro">
+    <!--<div class="negro">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-1 col-md-2"></div>
+                <div class="col-sm-10 col-md-8">
+                    <h2 class="whitecolor"><i class="fa fa-quote-left"></i> Creativity is allowing yourself to make
+                        mistakes
+                        Art is knowing which ones to keep <i class="fa fa-quote-right"></i></h2>
+                    <p class="top20">- Alice Jhonson -</p>
+                </div>
+                <div class="col-sm-1 col-md-2"></div>
+            </div>
+        </div>
+    </div>
+    -->
+</section>
+<!--Parallax Ends-->
+
 
 <!--About Us-->
-<section id="features" class="padding">
+<section id="SobreProyecto" class="padding">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 ">
                 <h2 class="text-captalize darkcolor bottom20">Sobre el proyecto</h2>
             </div>
             <div class="icon_wrap  clearfix">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bloqueTextoI text-justify">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left bloqueTexto">
 
                     <strong>¿Cuál es el problema que está tratando de resolver con esta aplicación?</strong>
 
@@ -243,7 +277,7 @@
                             y de la circulación al 50% de los vehículos en el interior de la M-30 y en la M-30.
                         </li>
                     </ul>
-                    <p>
+                    <p class="text-right">
                         Esto provoca más atascos lo que implica más contaminación, y confusión e irritación en la gente.
                         Además aunque se delimitan 5 zonas distintas para hacer las mediciones y los niveles altos se
                         detecten en distintas estaciones, las medidas restrictivas afectan principalmente a la almendra
@@ -300,25 +334,7 @@
 <!--About Us ends -->
 
 
-<!--Parallax-->
-<section id="m-parallax2" class="parallax-bg parallax padding negro">
-    <!--<div class="negro">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-sm-1 col-md-2"></div>
-                <div class="col-sm-10 col-md-8">
-                    <h2 class="whitecolor"><i class="fa fa-quote-left"></i> Creativity is allowing yourself to make
-                        mistakes
-                        Art is knowing which ones to keep <i class="fa fa-quote-right"></i></h2>
-                    <p class="top20">- Alice Jhonson -</p>
-                </div>
-                <div class="col-sm-1 col-md-2"></div>
-            </div>
-        </div>
-    </div>
-    -->
-</section>
-<!--Parallax Ends-->
+
 
 <!--About Us
 <section id="features" class="padding">
@@ -509,7 +525,7 @@ About Us ends -->
 
 <!--Latest Updates-->
 <section class="bgfull-imgtwo parallax" id="maxo_news">
-    <div class="bg-transparent padding darkcolor">
+    <div class=" padding darkcolor">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -568,12 +584,12 @@ About Us ends -->
     <div class="container ivy-team">
         <div class="row">
             <div class="col-sm-12 text-center">
-                <p class="title bottom0">Lorem ipsum sit</p>
-                <h2 class="text-capitalize heading_space darkcolor">Our team</h2>
+                <!-- <p class="title bottom0">Lorem ipsum sit</p> -->
+                <h2 class="text-capitalize heading_space darkcolor">Nuestro equipo</h2>
             </div>
             <div class="col-sm-12">
                 <div class="ivy-team">
-                    <div class="swiper-container">
+                    <div id="teamSlideContainer" class="swiper-container text-center">
                         <div class="swiper-wrapper">
                             <!-- Slides -->
                             <div class="swiper-slide ourteam">
@@ -621,87 +637,12 @@ About Us ends -->
                                     <p class="whitecolor">Graphis Designer </p>
                                 </div>
                             </div>
-                            <div class="swiper-slide ourteam">
-                                <div class="image">
-                                    <ul class="social_vertical">
-                                        <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i> </a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i> </a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-linkedin"></i> </a></li>
-                                    </ul>
-                                    <img src="resources/images/team4.jpg" alt="">
-                                </div>
-                                <div class="team_caption whitecolor bgdark">
-                                    <div class="overlay"></div>
-                                    <h3 class="bottom10">David Willey</h3>
-                                    <p class="whitecolor">marketing manager </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide ourteam">
-                                <div class="image">
-                                    <ul class="social_vertical">
-                                        <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i> </a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i> </a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-linkedin"></i> </a></li>
-                                    </ul>
-                                    <img src="resources/images/team1.jpg" alt="">
-                                </div>
-                                <div class="team_caption whitecolor">
-                                    <div class="overlay"></div>
-                                    <h3 class="bottom10">Emma Watson</h3>
-                                    <p class="whitecolor">Managing director </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide ourteam">
-                                <div class="image">
-                                    <ul class="social_vertical">
-                                        <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i> </a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i> </a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-linkedin"></i> </a></li>
-                                    </ul>
-                                    <img src="resources/images/team2.jpg" alt="">
-                                </div>
-                                <div class="team_caption whitecolor">
-                                    <div class="overlay"></div>
-                                    <h3 class="bottom10">James Cameron</h3>
-                                    <p class="whitecolor">Chief technology officer </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide ourteam">
-                                <div class="image">
-                                    <ul class="social_vertical">
-                                        <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i> </a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i> </a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-linkedin"></i> </a></li>
-                                    </ul>
-                                    <img src="resources/images/team3.jpg" alt="">
-                                </div>
-                                <div class="team_caption whitecolor">
-                                    <div class="overlay"></div>
-                                    <h3 class="bottom10">sarah wilson</h3>
-                                    <p class="whitecolor">Graphis Designer </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide ourteam">
-                                <div class="image">
-                                    <ul class="social_vertical">
-                                        <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i> </a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i> </a></li>
-                                        <li><a href="javascript:void(0)"><i class="fa fa-linkedin"></i> </a></li>
-                                    </ul>
-                                    <img src="resources/images/team4.jpg" alt="">
-                                </div>
-                                <div class="team_caption whitecolor">
-                                    <div class="overlay"></div>
-                                    <h3 class="bottom10">David Willey</h3>
-                                    <p class="whitecolor">marketing manager </p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="text-center">
+                <!-- <div class="text-center">
                     <div class="swiper-pagination top40"></div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
