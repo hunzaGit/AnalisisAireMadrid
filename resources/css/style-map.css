@@ -61,8 +61,8 @@ div.content {
   outline: none;
   z-index: 0;
   position: absolute;
-  width: 22px;
-  height: 22px;
+  width: 18px; /*22px*/
+  height: 18px; /*22px*/
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
   border-radius: 15px;
@@ -78,7 +78,7 @@ div.content {
   -webkit-transition-delay: 0.25s, 0.25s, 0.25s, 0.25s;
   transition: opacity 0.25s ease-in-out 0.25s, width 0.25s ease-in-out 0.25s, height 0.25s ease-in-out 0.25s, z-index 0.25s ease-in-out 0.25s;
   background: rgb(80, 89, 94);
-  border: 3px solid #f2c931;
+  border: 2px solid #f2c931; /*3px solid #f2c931;*/
 }
 .distribution-map .map-point .content {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -102,7 +102,7 @@ div.content {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
   width: 300px;
-  height: 80px;
+  height: 80px; /*80px*/ /*115px*/
   color: #e5e5e5;
   z-index: 1;
   -moz-transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;
@@ -124,6 +124,19 @@ div.content {
   color: #afe1fa;
 }
 
+.map-point{
+  padding: 3px 3px !important;
+}
+
+#datosMetereologicos{
+  top: 14%;
+  left:11%;
+}
+
+.hovered , .hovered > .content {
+    opacity: 1 !important;
+    color:#e5e5e5 !important;
+}
 
 /*.borde-rojo{
   border-color: red;

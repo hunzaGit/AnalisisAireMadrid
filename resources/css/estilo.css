@@ -166,10 +166,11 @@ body{
     text-align: center;
     margin: 0 auto;
 }
+
+
 .interactive-map {
-    width: 910px; /*500px*/
-    opacity: 1;
-    /*transform: rotate(-4deg);*/
+    max-width: 910px; /*width: 910px; /*500px*/
+    width: 100%;
 }
 
 #teamSlideContainer{
