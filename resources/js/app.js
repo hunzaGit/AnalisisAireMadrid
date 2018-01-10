@@ -55,7 +55,7 @@ $(document).ready(function () {
 
     $('#leyenda')
         .css('width', '300px')
-        .css('height', '200px');
+        .css('height', '175px');
 
     $.ajax({
         type: 'GET',
@@ -126,9 +126,26 @@ $(document).ready(function () {
             function (jqXHR, statusText, errorThrown) {
                 console.error("Error al buscar datos en S3");
             }
-    })
-    ;
+    });
 
+
+
+
+    // https://opendata.aemet.es/opendata/api/prediccion/especifica/municipio/horaria/079
+    $.ajax({
+        type: 'GET',
+        url: 'https://opendata.aemet.es/opendata/api/prediccion/especifica/municipio/horaria/079',
+        dataType: 'json',
+        success: function (prediccion, textStatus, jqXHR) {
+
+            console.log(prediccion);
+
+
+        },
+        error: function (jqXHR, statusText, errorThrown) {
+            console.error("Error al pedir prediccion al AEMET");
+        }
+    });
 
 })
 ;

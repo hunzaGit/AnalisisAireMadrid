@@ -44,7 +44,7 @@ div.content {
 .distribution-map {
   position: relative;
   width: 100%;
-  padding: 20px;
+  padding: 0px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -101,8 +101,8 @@ div.content {
   padding: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
-  width: 300px;
-  height: 80px; /*80px*/ /*115px*/
+  width: 274px; /*300*/
+  height: 75px; /*80px*/ /*115px*/
   color: #e5e5e5;
   z-index: 1;
   -moz-transition: opacity 0.25s ease-in-out, width 0.25s ease-in-out, height 0.25s ease-in-out;
@@ -131,13 +131,13 @@ div.content {
 #datosMetereologicos{
     top: 14%;
     left:11%;
-    box-shadow: 10px 10px 5px #949494;
+    box-shadow: 4px 4px 9px #949494;
 }
 
 #leyenda{
-    top: 39%;
+    top: 40%;
     left:11%;
-    box-shadow: 10px 10px 5px grey;
+    box-shadow: 4px 4px 9px #949494;
 }
 
 .hovered , .hovered > .content {

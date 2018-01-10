@@ -10,9 +10,10 @@ s3 = boto3.resource('s3')
 
 
 dia = datetime.date.today().strftime("%d/%m/%Y")
-hora =  datetime.datetime.now().strftime("%H:%M")
+hora =  int(datetime.datetime.now().strftime("%H"))+1
+horaMin = str(hora) + ':' + datetime.datetime.now().strftime("%M")
 
-fechaJSON = '{"dia":"'+dia+'","hora":"'+hora+'"}'
+fechaJSON = '{"dia":"'+dia+'","hora":"'+horaMin+'"}'
 
 data = open('valoresTiempoReal/part-00000', 'rb')
 s3.Bucket('bucketcloud18').put_object(Key='Datos Proyecto/Tiempo_real/horario.json', Body=data, ACL='public-read')
