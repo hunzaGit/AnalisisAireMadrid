@@ -129,8 +129,15 @@ div.content {
 }
 
 #datosMetereologicos{
-  top: 14%;
-  left:11%;
+    top: 14%;
+    left:11%;
+    box-shadow: 10px 10px 5px #949494;
+}
+
+#leyenda{
+    top: 39%;
+    left:11%;
+    box-shadow: 10px 10px 5px grey;
 }
 
 .hovered , .hovered > .content {
@@ -138,6 +145,15 @@ div.content {
     color:#e5e5e5 !important;
 }
 
+#asdfasfaf{
+    border: 2px solid #FA0001; /*3px solid #f2c931;*/
+}
 /*.borde-rojo{
   border-color: red;
 }*/
+
+
+.colorLeyenda{
+    width: 7%;
+    height: 7%;
+}

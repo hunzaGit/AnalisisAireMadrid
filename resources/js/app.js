@@ -34,7 +34,11 @@ const estaciones = {
     28079054: {nombre: "Ensanche de Vallecas", nivelNO2: {valor: -1, hora: ""}, posisMap: {top: "75.2", left: "58.6"}},
 
     28079055: {nombre: "Urb. Embajada", nivelNO2: {valor: -1, hora: ""}, posisMap: {top: "53", left: "61.6"}},
-    28079056: {nombre: "Pza. Fernández Ladreda", nivelNO2: {valor: -1, hora: ""}, posisMap: {top: "72.5", left: "47.5"}},
+    28079056: {
+        nombre: "Pza. Fernández Ladreda",
+        nivelNO2: {valor: -1, hora: ""},
+        posisMap: {top: "72.5", left: "47.5"}
+    },
     28079057: {nombre: "Sanchinarro", nivelNO2: {valor: -1, hora: ""}, posisMap: {top: "45", left: "53.8"}},
 
     28079058: {nombre: "El Pardo", nivelNO2: {valor: -1, hora: ""}, posisMap: {top: "39.3", left: "42.7"}},
@@ -49,15 +53,24 @@ $(document).ready(function () {
         .css('width', '300px')
         .css('height', '115px');
 
+    $('#leyenda')
+        .css('width', '300px')
+        .css('height', '200px');
+
     $.ajax({
         type: 'GET',
         url: 'https://s3.amazonaws.com/bucketcloud18/Datos+Proyecto/Tiempo_real/horario.json',
         dataType: 'json',
         success: function (data, textStatus, jqXHR) {
 
-            const valorTopVerde = 60,
-                valorTopAmarillo = 100,
-                valorTopNaranja = 160;
+            console.log(data);
+            console.log(textStatus);
+            console.log(jqXHR);
+
+
+            const valorTopVerde = 100,
+                valorTopAmarillo = 160,
+                valorTopNaranja = 180;
 
             /*Object.keys(data).forEach((id) => {
                 console.log(id + ':{ nombre: "", nivelNO2: {    valor: -1, hora: "" }, posisMap:    { top:"", left     : ""            }},')
@@ -76,21 +89,36 @@ $(document).ready(function () {
 
                     $('.interactive-map').after(html);
 
-                    if (valor <= valorTopVerde) { // [...,60]
+                    if (valor <= valorTopVerde) { // [...,100]
                         $('#' + idNum).css('border-color', '#00f263');
-                    } else if (valor > valorTopVerde && valor <= valorTopAmarillo) { // (60, 100]
+                    } else if (valor > valorTopVerde && valor <= valorTopAmarillo) { // (100, 160]
                         $('#' + idNum).css('border-color', '#f2c931');
-                    } else if (valor > valorTopAmarillo && valor < valorTopNaranja) { // (100,160)
+                    } else if (valor > valorTopAmarillo && valor <= valorTopNaranja) { // (160,180]
                         $('#' + idNum).css('border-color', '#f26c00');
-                    } else if (valor >= valorTopNaranja) { // [160, ...]
-                        $('#' + idNum).css('border-color', '#d80001');
+                    } else if (valor > valorTopNaranja) { // [160, ...]
+                        $('#' + idNum).css('border-color', '#FA0001');
                     }
                 });
 
+            });
+            //https://s3.amazonaws.com/bucketcloud18/Datos+Proyecto/Tiempo_real/fechaActualizacion.json
 
+            $.ajax({
+                type: 'GET',
+                url: 'https://s3.amazonaws.com/bucketcloud18/Datos+Proyecto/Tiempo_real/fechaActualizacion.json',
+                dataType: 'json',
+                success: function (horaUpdate, textStatus, jqXHR) {
+
+                    console.log(horaUpdate);
+                    $('#fechaActualizacion').append(horaUpdate.dia);
+                    $('#horaActualizacion').append(horaUpdate.hora);
+
+                },
+                error: function (jqXHR, statusText, errorThrown) {
+                    console.error("Error al buscar hora actualizacion en S3");
+                }
             });
 
-            console.log(estaciones);
 
         },
         error:
@@ -108,16 +136,15 @@ $(document).ready(function () {
 
 function crearHTMLPuntoEstacion(id, infoEstacion, callback = Function()) {
 
-    let
-        html = '<button id=' + id.toString() + ' class="map-point" style="top:' + infoEstacion.posisMap.top + '%;left:' + infoEstacion.posisMap.left + '%">' +
-            '<div class="content">' +
-            '<div class="">' +
-            '<h3 class="titulo-content">' + infoEstacion.nombre + '</h3>' +
-            '<div class="middle-line" ></div>' +
-            '<p id="' + id.toString() + 'p" class="info-content"><strong>' + infoEstacion.nivelNO2.valor + '</strong><span> µ/m³ NO<sub>2</sub></span></p>' +
-            '</div>' +
-            '</div>' +
-            '</button>'
+    let html = '<button id=' + id.toString() + ' class="map-point" style="top:' + infoEstacion.posisMap.top + '%;left:' + infoEstacion.posisMap.left + '%">' +
+        '<div class="content">' +
+        '<div class="">' +
+        '<h3 class="titulo-content">' + infoEstacion.nombre + '</h3>' +
+        '<div class="middle-line" ></div>' +
+        '<p id="' + id.toString() + 'p" class="info-content"><strong>' + infoEstacion.nivelNO2.valor + '</strong><span> µg/m³ NO<sub>2</sub></span></p>' +
+        '</div>' +
+        '</div>' +
+        '</button>'
 
     callback(html);
 }
