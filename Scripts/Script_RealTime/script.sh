@@ -1,24 +1,29 @@
 #!/bin/bash
 
 # Created by Rodrigo de Miguel on 08/01/2018.
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
 
-# crontab line
-# 31 * * * * ~/rodrigoDir/proyecto/tiemporeal/script.sh
-
-echo Descargando fichero...
+echo --------------------------------------------------------------------------
+date
+echo --------------------------------------------------------------------------
+echo
+echo --- Descargando fichero...
 
 curl -O http://www.mambiente.munimadrid.es/opendata/horario.csv
 
-echo eliminando directorio...
+echo --- Eliminando directorio...
 
+# rm -r ~/rodrigoDir/proyecto/tiemporeal/valoresTiempoReal/
 rm -r valoresTiempoReal/
 
-echo Ejecutando Spark..
+echo --- Ejecutando Spark..
 
-spark-submit tiemporeal.py
+/home/ubuntu/spark-2.2.0-bin-hadoop2.7/bin/spark-submit tiemporeal.py
 
-echo subiendo fichero a AWS S3
+echo --- Subiendo fichero a AWS S3
 
 python subirFicherosAS3.py 
 
-echo Terminado!
+echo --- Terminado!
+echo --------------------------------------------------------------------------
+echo

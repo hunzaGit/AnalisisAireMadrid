@@ -13,19 +13,30 @@ def formatearHoras(line):
 	tupla = ()
 	comunid = line[0]
 	municipio = line[1]
-	estacion = line[2]
 	hora = 1
-	for i in range(9, len(line), 2):
+	estacion = line[2]
+	# print len(line) # 56
+	if len(estacion) == 1:
+		estacion = '00' + estacion
+	if len(estacion) == 2:
+		estacion = '0' + estacion
+	for i in xrange(9, len(line), 2):
+		# print i
 		if line[i] == 'N':
-			if len(estacion) == 1:
-				estacion = '00' + estacion
-			if len(estacion) == 2:
-				estacion = '0' + estacion
-			tupla = ( comunid + municipio + estacion, line[i - 3], str(hora-1))
-			#print tupla
+			# print "encontrada una N"
+			tupla = ( comunid + municipio + estacion, (line[i - 3], str(hora-1)))
+			# print tupla
+			return tupla
+		elif i == len(line)-1:
+			# print "final de linea"
+			tupla = ( comunid + municipio + estacion, (line[i - 1], str(hora-1)))
+			# print tupla
 			return tupla
 		else:
 			hora += 1
+			# print "hora: " + str(hora)
+
+
 
 # ('codEstacion', valor, hora)
 
@@ -51,19 +62,24 @@ linesNO2 = lines.filter(lambda line: line[3] == '8')
 
 
 
-linesF = linesNO2.map(formatearHoras).sortByKey()
+linesF = linesNO2.map(formatearHoras)
+# ('codEstacion', (valor, 'hora'))
+
+
+linesOrd = linesF.sortByKey()
 # ('codEstacion', valor, 'hora')
 
 def toJSON(tupla):
 	if tupla[0] == '28079004': # primera estacion
-		line = '{"'+tupla[0]+'":{"valor":"'+tupla[1]+'", "hora":"'+tupla[2]+'"},'
+		line = '{"'+tupla[0]+'":{"valor":"'+tupla[1][0]+'", "hora":"'+tupla[1][1]+'"},'
 	elif tupla[0] == '28079060': # ultima estacion
-		line = '"'+tupla[0]+'":{"valor":"'+tupla[1]+'", "hora":"'+tupla[2]+'"}'+'}'
+		line = '"'+tupla[0]+'":{"valor":"'+tupla[1][0]+'", "hora":"'+tupla[1][1]+'"}'+'}'
 	else:
-		line = '"'+tupla[0]+'":{"valor":"'+tupla[1]+'", "hora":"'+tupla[2]+'"},'
+		line = '"'+tupla[0]+'":{"valor":"'+tupla[1][0]+'", "hora":"'+tupla[1][1]+'"},'
 	return line
 
-linesJSON = linesF.map(toJSON)
+
+linesJSON = linesOrd.map(toJSON)
 # "codEstacion":{ "valor": "valor",  "hora": "hora" }
 
 linesJSON.saveAsTextFile("valoresTiempoReal")

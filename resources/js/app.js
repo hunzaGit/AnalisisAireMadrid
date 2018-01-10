@@ -55,11 +55,15 @@ $(document).ready(function () {
         dataType: 'json',
         success: function (data, textStatus, jqXHR) {
 
+            const valorTopVerde = 60,
+                valorTopAmarillo = 100,
+                valorTopNaranja = 160;
 
             /*Object.keys(data).forEach((id) => {
                 console.log(id + ':{ nombre: "", nivelNO2: {    valor: -1, hora: "" }, posisMap:    { top:"", left     : ""            }},')
             });*/
 
+            console.log('hora datos: ' + data[28079004].hora);
 
             Object.keys(data).forEach((idNum) => {
 
@@ -67,19 +71,19 @@ $(document).ready(function () {
                 estaciones[idNum].nivelNO2.valor = valor;
                 estaciones[idNum].nivelNO2.hora = data[idNum].hora;
 
+
                 crearHTMLPuntoEstacion(idNum, estaciones[idNum], (html) => {
 
                     $('.interactive-map').after(html);
 
-                    if (valor <= 60) {
-                        console.log(true);
+                    if (valor <= valorTopVerde) { // [...,60]
                         $('#' + idNum).css('border-color', '#00f263');
-                    } else if (valor >= 100) {
-                        console.log(true);
+                    } else if (valor > valorTopVerde && valor <= valorTopAmarillo) { // (60, 100]
+                        $('#' + idNum).css('border-color', '#f2c931');
+                    } else if (valor > valorTopAmarillo && valor < valorTopNaranja) { // (100,160)
                         $('#' + idNum).css('border-color', '#f26c00');
-                    } else if (valor >= 160) {
-                        console.log(true);
-                        $('#' + idNum).css('border-color', '#F2350B');
+                    } else if (valor >= valorTopNaranja) { // [160, ...]
+                        $('#' + idNum).css('border-color', '#d80001');
                     }
                 });
 
