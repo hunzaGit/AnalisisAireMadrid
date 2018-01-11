@@ -129,13 +129,13 @@ div.content {
 }
 
 #datosMetereologicos{
-    top: 14%;
+    top: 17%;
     left:11%;
     box-shadow: 4px 4px 9px #949494;
 }
 
 #leyenda{
-    top: 40%;
+    top: 47%;
     left:11%;
     box-shadow: 4px 4px 9px #949494;
 }
@@ -156,4 +156,8 @@ div.content {
 .colorLeyenda{
     width: 7%;
     height: 7%;
+}
+
+.pfechaActualiz{
+    margin: 0px;
 }

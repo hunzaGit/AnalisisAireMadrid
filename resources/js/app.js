@@ -51,22 +51,17 @@ $(document).ready(function () {
 
     $('#datosMetereologicos')
         .css('width', '300px')
-        .css('height', '115px');
+        .css('height', 'auto'); //115px
 
     $('#leyenda')
         .css('width', '300px')
-        .css('height', '175px');
+        .css('height', 'auto'); //175px
 
     $.ajax({
         type: 'GET',
         url: 'https://s3.amazonaws.com/bucketcloud18/Datos+Proyecto/Tiempo_real/horario.json',
         dataType: 'json',
         success: function (data, textStatus, jqXHR) {
-
-            console.log(data);
-            console.log(textStatus);
-            console.log(jqXHR);
-
 
             const valorTopVerde = 100,
                 valorTopAmarillo = 160,
@@ -75,8 +70,6 @@ $(document).ready(function () {
             /*Object.keys(data).forEach((id) => {
                 console.log(id + ':{ nombre: "", nivelNO2: {    valor: -1, hora: "" }, posisMap:    { top:"", left     : ""            }},')
             });*/
-
-            console.log('hora datos: ' + data[28079004].hora);
 
             Object.keys(data).forEach((idNum) => {
 
@@ -101,7 +94,6 @@ $(document).ready(function () {
                 });
 
             });
-            //https://s3.amazonaws.com/bucketcloud18/Datos+Proyecto/Tiempo_real/fechaActualizacion.json
 
             $.ajax({
                 type: 'GET',
@@ -109,9 +101,13 @@ $(document).ready(function () {
                 dataType: 'json',
                 success: function (horaUpdate, textStatus, jqXHR) {
 
-                    console.log(horaUpdate);
-                    $('#fechaActualizacion').append(horaUpdate.dia);
-                    $('#horaActualizacion').append(horaUpdate.hora);
+                    if(horaUpdate){
+                        $('#fechaActualizacion').append(horaUpdate.dia);
+                        $('#horaActualizacion').append(horaUpdate.hora);
+                    }else{
+                        $('#fechaActualizacion').append('-');
+                        $('#horaActualizacion').append('-');
+                    }
 
                 },
                 error: function (jqXHR, statusText, errorThrown) {
@@ -128,27 +124,74 @@ $(document).ready(function () {
             }
     });
 
+    //http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=da800b2b6787ebdc3b4a4ce7422f48a8
 
-
-
-    // https://opendata.aemet.es/opendata/api/prediccion/especifica/municipio/horaria/079
     $.ajax({
-        type: 'GET',
-        url: 'https://opendata.aemet.es/opendata/api/prediccion/especifica/municipio/horaria/079',
-        dataType: 'json',
-        success: function (prediccion, textStatus, jqXHR) {
+        //url: "http://api.openweathermap.org/data/2.5/weather?q=Madrid&lang=es&units=metric&appid=da800b2b6787ebdc3b4a4ce7422f48a8",
+        url: "http://api.openweathermap.org/data/2.5/weather?q=Madrid&lang=es&units=metric&appid=da800b2b6787ebdc3b4a4ce7422f48a8",
+        method: "GET",
+        success: function (data, textStatus, jqXHR) {
 
-            console.log(prediccion);
+            console.log('*** actual **************');
+
+            //console.log('RESPUESTA: ');
+            console.log(data);
+
+
+            $('#EstadoCielo').text("Estado del cielo: "/* + data.weather[0].description*/);
+            if(data.weather[0].icon)
+                $('#EstadoCielo').after("<img src='http://openweathermap.org/img/w/"+data.weather[0].icon +".png' style='margin: -15px 0;' title='"+data.weather[0].description +"'>");
+            else
+                $('#EstadoCielo').after(data.weather[0].description);
+            $('#viento').text("Viento: " + data.wind.speed + "m/s " + convertDir(data.wind.deg));
+            //$('#dirViento').text("Dir. viento: " );
+            $('#temperatura').text("Temperatura: " + data.main.temp + "ºC");
+
+
+            const fechaMET = convertTimestamp(data.dt);
+            if(data.dt) {
+                $('#fechaActuMet').append(fechaMET.dia);
+                $('#horaActuMet').append(fechaMET.hora);
+            }else{
+                $('#fechaActuMet').append('-');
+                $('#horaActuMet').append('-');
+            }
 
 
         },
         error: function (jqXHR, statusText, errorThrown) {
-            console.error("Error al pedir prediccion al AEMET");
+            console.log("Error en AEMET");
         }
     });
 
-})
-;
+
+
+    $.ajax({
+        //url: "http://api.openweathermap.org/data/2.5/weather?q=Madrid&lang=es&units=metric&appid=da800b2b6787ebdc3b4a4ce7422f48a8",
+        url: "http://api.openweathermap.org/data/2.5/forecast?q=Madrid,es&lang=es&units=metric&appid=da800b2b6787ebdc3b4a4ce7422f48a8",
+        method: "GET",
+        success: function (data, textStatus, jqXHR) {
+            console.log('*** prediccion **************');
+
+            //console.log('RESPUESTA: ');
+            //console.dir(data);
+            if(data.list[27].rain['3h']){
+               $('#predicLluvia').text('Precipitaciones: '+data.list[27].rain['3h'] + 'mm');
+            }else{
+                $('#predicLluvia').text('Precipitaciones: No se preveen');
+            }
+
+
+            //console.log();
+
+        },
+        error: function (jqXHR, statusText, errorThrown) {
+            console.log("Error en openweathermap");
+        }
+    });
+
+
+});
 
 
 function crearHTMLPuntoEstacion(id, infoEstacion, callback = Function()) {
@@ -164,4 +207,49 @@ function crearHTMLPuntoEstacion(id, infoEstacion, callback = Function()) {
         '</button>'
 
     callback(html);
+}
+
+
+function convertDir (deg){
+    let val = '';
+    if(deg >=337.5 && deg <= 22.5) val = 'Norte';
+    if(deg <=337.5 && deg >= 292.5) val = 'Noroeste';
+    if(deg <=292.5 && deg >= 247.5) val = 'Oeste';
+    if(deg <=247.5 && deg >= 202.5) val = 'Suroeste';
+    if(deg <=202.5 && deg >= 157.5) val = 'Sur';
+    if(deg <=157.5 && deg >= 112.5) val = 'Sureste';
+    if(deg <=112.5 && deg >= 67.5) val = 'Este';
+    if(deg <=67.5 && deg >= 22.5) val = 'Noreste';
+    return val;
+}
+
+
+function convertTimestamp(timestamp) {
+    var d = new Date(timestamp * 1000),	// Convert the passed timestamp to milliseconds
+        yyyy = d.getFullYear(),
+        mm = ('0' + (d.getMonth() + 1)).slice(-2),	// Months are zero based. Add leading 0.
+        dd = ('0' + d.getDate()).slice(-2),			// Add leading 0.
+        hh = d.getHours(),
+        h = hh,
+        min = ('0' + d.getMinutes()).slice(-2),		// Add leading 0.
+        ampm = 'AM',
+        time;
+
+    if (hh > 12) {
+        h = hh - 12;
+        ampm = 'PM';
+    } else if (hh === 12) {
+        h = 12;
+        ampm = 'PM';
+    } else if (hh == 0) {
+        h = 12;
+    }
+
+    // ie: 20/01/2018, 14:35
+    time = {
+        dia:dd + '/' + mm + '/' + yyyy,
+        hora: hh + ':' + min
+    }
+
+    return time;
 }
