@@ -176,7 +176,7 @@ $(document).ready(function () {
             //console.log('RESPUESTA: ');
             console.dir(data);
 
-            
+
             if(data.list[0].rain['3h']){
                $('#predicLluvia').text('Precipitaciones: '+data.list[0].rain['3h'] + 'mm');
             }else{
