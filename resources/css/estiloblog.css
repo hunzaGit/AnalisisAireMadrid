@@ -1,0 +1,132 @@
+.page-header{
+	background: url("../images/Madrid/8108693-1.jpg") no-repeat;
+}
+
+.parrafito{
+	font-size: 1rem;
+	margin-bottom: 15px;
+	text-align: justify;
+	word-spacing: 0.0rem;
+}
+
+#lista {
+	font-size: 1rem;
+	list-style-type: disc;
+	padding-left: 1em;
+	padding-right: 0;
+	margin-bottom: 15px;
+	font-weight: 300;
+	line-height: 1.34rem;
+	text-align: justify;
+}
+
+.enlaces{
+	color: #337ab7;
+	font-weight: 400;
+}
+
+.bloc{
+	padding-left:4%;
+}
+
+#datos1{
+	height: 65px;
+	margin-top: -15px;
+	margin-left: 20%;
+	
+}
+#datos2{
+	height: 108px;
+	margin-top: -15px;
+	margin-bottom: 15px;
+	margin-left: 20%;
+}
+
+.graf{
+	padding-left: 0;
+}
+
+.modal {
+   display: none;
+   position: fixed;
+   /*top: 15%;*/
+ }
+ 
+.modal .modal-ctn {
+    background: #fefefe;
+    border: #333 solid 1px;
+    border-radius: 3px;
+    position: fixed;
+    left: 2%;
+    z-index: 11;
+    width: 96%;
+}
+
+.modal:before {
+   content: "";
+    display: block;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.modal .modal-title {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 8px 10px;
+  border-bottom: 1px solid #EEEEEE;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.modal .modal-title span.close {
+  background-color: #4D4D4D;
+  position: absolute;
+  text-align: center;
+  top: 7px;
+  right: 10px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 360px;
+  -moz-border-radius: 360px;
+  border-radius: 360px;
+}
+
+.modal .modal-title span.close:before {
+  content: "X";
+  color: #FFFFFF;
+  font-size: 11px;
+  display: block;
+  margin: 4px 2px 0 0;
+}
+
+.modal .modal-title span.close:hover,
+.modal .modal-title span.close:focus{
+  cursor: pointer;
+}
+
+.modal .modal-body {
+  padding: 10px;
+  display: block;
+  overflow: hidden;
+}
+/*.ejemplo{
+	height:100px;
+}*/
+#datawrapper-chart-03jtJaa{
+	height:500px;
+	width: 100%;
+}
+.mapita{
+	padding-left: 0;
+}
