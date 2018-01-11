@@ -105,8 +105,11 @@ body{
 
 
 @media only screen and (max-width: 600px) {
+    #divTitulo{
+       /* width: 100%;*/
+    }
     #titulo {
-        /*width: 246px;*/
+      /*  width: 246px;*/
     }
     #integrantes > li{
 
