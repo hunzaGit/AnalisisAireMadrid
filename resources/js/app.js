@@ -128,7 +128,7 @@ $(document).ready(function () {
 
     $.ajax({
         //url: "http://api.openweathermap.org/data/2.5/weather?q=Madrid&lang=es&units=metric&appid=da800b2b6787ebdc3b4a4ce7422f48a8",
-        url: "http://api.openweathermap.org/data/2.5/weather?q=Madrid&lang=es&units=metric&appid=da800b2b6787ebdc3b4a4ce7422f48a8",
+        url: "https://api.openweathermap.org/data/2.5/weather?q=Madrid,es&lang=es&units=metric&appid=da800b2b6787ebdc3b4a4ce7422f48a8",
         method: "GET",
         success: function (data, textStatus, jqXHR) {
 
@@ -168,15 +168,17 @@ $(document).ready(function () {
 
     $.ajax({
         //url: "http://api.openweathermap.org/data/2.5/weather?q=Madrid&lang=es&units=metric&appid=da800b2b6787ebdc3b4a4ce7422f48a8",
-        url: "http://api.openweathermap.org/data/2.5/forecast?q=Madrid,es&lang=es&units=metric&appid=da800b2b6787ebdc3b4a4ce7422f48a8",
+        url: "https://api.openweathermap.org/data/2.5/forecast?q=Madrid,es&lang=es&units=metric&cnt=2&appid=da800b2b6787ebdc3b4a4ce7422f48a8",
         method: "GET",
         success: function (data, textStatus, jqXHR) {
             console.log('*** prediccion **************');
 
             //console.log('RESPUESTA: ');
-            //console.dir(data);
-            if(data.list[27].rain['3h']){
-               $('#predicLluvia').text('Precipitaciones: '+data.list[27].rain['3h'] + 'mm');
+            console.dir(data);
+
+            
+            if(data.list[0].rain['3h']){
+               $('#predicLluvia').text('Precipitaciones: '+data.list[0].rain['3h'] + 'mm');
             }else{
                 $('#predicLluvia').text('Precipitaciones: No se preveen');
             }
