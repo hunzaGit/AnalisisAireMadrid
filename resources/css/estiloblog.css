@@ -8,8 +8,16 @@
 	text-align: justify;
 	word-spacing: 0.0rem;
 }
+#pie_foto{
+	font-size: 13px;
+	/*background-color:#E6E6E6;*/
+}
 
-#lista {
+#medidas{
+	padding-left: 0;
+	margin-top: 5px;
+}
+.lista {
 	font-size: 1rem;
 	list-style-type: disc;
 	padding-left: 1em;
@@ -44,6 +52,18 @@
 
 .graf{
 	padding-left: 0;
+}
+.graf1{
+	padding-right: 0;
+}
+
+.graf3{
+	padding-left: 0;
+	height: 186px;
+}
+.graf4{
+	padding-right: 0;
+	height: 186px;
 }
 
 .modal {
@@ -122,11 +142,11 @@
 }
 /*.ejemplo{
 	height:100px;
-}*/
+}*//*
 #datawrapper-chart-03jtJaa{
 	height:500px;
 	width: 100%;
-}
+}*/
 .mapita{
 	padding-left: 0;
 }
