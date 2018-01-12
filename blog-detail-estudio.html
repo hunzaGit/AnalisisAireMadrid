@@ -367,7 +367,25 @@
 					<img src="resources/images/Blog/Zona 6.png" style="width: 100%;"></img>
 					</a>
 					<!--Fin grafica 12-->
-					<p class="bottom30 parrafito">Una vez generadas las gráficas, comprobamos si nuestra nueva distribución tenia coherencia con nuestro objetivo, y así era. Las gráficas arrojaban como resultado unas cantidades de NO2 mucho más similares entre las estaciones agrupadas, a diferencia que con la anterior distribución, en la cual llegaban a ser dispares e incluso menos predecibles. Aunque había estaciones que generaban valores distintos, como por ejemplo la estacion 49 en la nueva zona 3, pero también tratamos de distribuir el mapa adaptandonos a los distritos de Madrid para que tuviese un sentido más lógico para los usuarios, así que estaciones como la anteriormente mencionada, no podian distribuirse de otra manera.</p>
+					<p class="bottom30 parrafito">Una vez generadas las gráficas, comprobamos si nuestra nueva distribución tenia coherencia con nuestro objetivo, y así era. Las gráficas arrojaban como resultado unas cantidades de NO<sub>2</sub> mucho más similares entre las estaciones agrupadas, a diferencia que con la anterior distribución, en la cual llegaban a ser dispares e incluso menos predecibles. Aunque había estaciones que generaban valores distintos, como por ejemplo la estacion 49 en la nueva zona 3, pero también tratamos de distribuir el mapa adaptandonos a los distritos de Madrid para que tuviese un sentido más lógico para los usuarios, así que estaciones como la anteriormente mencionada, no podian distribuirse de otra manera.</p>
+					<p class="bottom30 parrafito">Una vez hecho esto, volvimos a generar una gráfica con la media de las zonas para ver si se veía diferencia entre las anteriores y otras.</p>
+					<!--Grafica 13-->
+					<div id="grafica13" class="modal">
+					  <div class="modal-dialog">
+						<div class="modal-ctn">
+						  <div class="modal-title">
+						  </div>
+						  <div class="modal-body"></div>
+						</div>
+					  </div>
+					</div>
+					<!--/ Ventana modal -->
+					<a href="javascript:void(0)" class="col-md-7 col-sm-7 graf3 grafica13">
+					<img src="resources/images/Blog/grafica2.png" style="width: 100%;"></img>
+					</a>
+					<!--Fin grafica 13-->
+					<p class="bottom30 parrafito">Después, mediante la herramienta de creación de mapas personalizados de Google Maps, se pasó a hacer la delimitación precisa de las zonas, procurando en el proceso que éstas pudiesen englobar los distritos del municipio, sin recortarlos, y que también siguiese una lógica en sus límites en cuanto a las carreteras y autopistas. Las nuevas zonas, 6 en total, se marcaron finalmente con distintos colores para una fácil distinción visual. El resultado obtenido era ver rápidamente cómo, especialmente en el centro, se habían redistribuido las zonas, quedando la zona de Plaza de España como una de las que, curiosamente, menos niveles de contaminación presentaban en los episodios, frente a las otras dos zonas que están en el interior de la M-30.</p>
+					<div class="col-md-6 col-sm-6 mapita1"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=16f678ohG1KlZPqeiFjoLUBb9h0bUic8z&z=10" width="100%" height="480"></iframe></div>
 				</div>                
             </div>
         </div>
@@ -386,7 +404,7 @@
 		// Mostramos la ventana modal
 		$('#grafica1').show('medium');
 		//  Copiamos imagen actual en el modal ".modal-body" 
-		$('.modal .modal-body').html('<iframe id="datawrapper-chart-d8tv6" src="https://datawrapper.dwcdn.net/d8tv6/2/" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" style="width: 0; min-width: 100% !important;" height="500"></iframe>');
+		$('.modal .modal-body').html('<iframe id="datawrapper-chart-d8tv6" src="https://datawrapper.dwcdn.net/d8tv6/4/" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" style="width: 0; min-width: 100% !important;" height="500"></iframe>');
 		$('.modal .modal-title').html('Media por zonas <span class="close"></span>');
 	  });
 	  
@@ -434,7 +452,7 @@
 		$('#grafica7').show('medium');
 		//  Copiamos imagen actual en el modal ".modal-body" 
 		$('.modal .modal-body').html('<iframe id="datawrapper-chart-GCIFZ" src="https://datawrapper.dwcdn.net/GCIFZ/1/" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" style="width: 0; min-width: 100% !important;" height="500"></iframe>');
-		$('.modal .modal-title').html('Media por zonas <span class="close"></span>');
+		$('.modal .modal-title').html('Datos de la nueva Zona 1 <span class="close"></span>');
 	  });
 	  
 	  $(document).on('click', 'a.grafica8', function(){
@@ -442,7 +460,7 @@
 		$('#grafica8').show('medium');
 		//  Copiamos imagen actual en el modal ".modal-body" 
 		$('.modal .modal-body').html('<iframe id="datawrapper-chart-2hMr4" src="https://datawrapper.dwcdn.net/2hMr4/4/" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" style="width: 0; min-width: 100% !important;" height="500"></iframe>');
-		$('.modal .modal-title').html('Datos zona 1 <span class="close"></span>');
+		$('.modal .modal-title').html('Datos de la nueva Zona 2 <span class="close"></span>');
 	  });
 	  
 	  $(document).on('click', 'a.grafica9', function(){
@@ -450,7 +468,7 @@
 		$('#grafica9').show('medium');
 		//  Copiamos imagen actual en el modal ".modal-body" 
 		$('.modal .modal-body').html('<iframe id="datawrapper-chart-5HzEu" src="https://datawrapper.dwcdn.net/5HzEu/1/" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" style="width: 0; min-width: 100% !important;" height="500"></iframe>');
-		$('.modal .modal-title').html('Datos zona 2 <span class="close"></span>');
+		$('.modal .modal-title').html('Datos de la nueva Zona 3 <span class="close"></span>');
 	  });
 	  
 	  $(document).on('click', 'a.grafica10', function(){
@@ -458,7 +476,7 @@
 		$('#grafica10').show('medium');
 		//  Copiamos imagen actual en el modal ".modal-body" 
 		$('.modal .modal-body').html(' <iframe id="datawrapper-chart-aLDg3" src="https://datawrapper.dwcdn.net/aLDg3/1/" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" style="width: 0; min-width: 100% !important;" height="500"></iframe>');
-		$('.modal .modal-title').html('Datos zona 3 <span class="close"></span>');
+		$('.modal .modal-title').html('Datos de la nueva Zona 4 <span class="close"></span>');
 	  });
 	  
 	  $(document).on('click', 'a.grafica11', function(){
@@ -466,7 +484,7 @@
 		$('#grafica11').show('medium');
 		//  Copiamos imagen actual en el modal ".modal-body" 
 		$('.modal .modal-body').html('<iframe id="datawrapper-chart-dtAm1" src="https://datawrapper.dwcdn.net/dtAm1/1/" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" style="width: 0; min-width: 100% !important;" height="500"></iframe>');
-		$('.modal .modal-title').html('Datos zona 4 <span class="close"></span>');		
+		$('.modal .modal-title').html('Datos de la nueva Zona 5 <span class="close"></span>');		
 	  });
 	  
 	  $(document).on('click', 'a.grafica12', function(){
@@ -474,7 +492,15 @@
 		$('#grafica12').show('medium');
 		//  Copiamos imagen actual en el modal ".modal-body" 
 		$('.modal .modal-body').html('<iframe id="datawrapper-chart-9M2hR" src="https://datawrapper.dwcdn.net/9M2hR/1/" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" style="width: 0; min-width: 100% !important;" height="500"></iframe>');
-		$('.modal .modal-title').html('Datos Zona 5 <span class="close"></span>');
+		$('.modal .modal-title').html('Datos de la nueva Zona 6 <span class="close"></span>');
+	  });
+	  
+	  $(document).on('click', 'a.grafica13', function(){
+		// Mostramos la ventana modal
+		$('#grafica13').show('medium');
+		//  Copiamos imagen actual en el modal ".modal-body" 
+		$('.modal .modal-body').html('<iframe id="datawrapper-chart-ZqIx8" src="https://datawrapper.dwcdn.net/ZqIx8/1/" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" style="width: 0; min-width: 100% !important;" height="500"></iframe>');
+		$('.modal .modal-title').html('Medias de las nuevas zonas<span class="close"></span>');
 	  });
 	  // Función para cerrar ventana modal
 	  $(document).on('click', '.modal .modal-title span.close', function(){
@@ -499,12 +525,7 @@
                 <p class="top10">Copyright 2017, All rights reserved.</p>
             </div>
             <div class="col-sm-6 text-right">
-                <ul class="social top10">
-                    <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i> </a> </li>
-                    <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i> </a> </li>
-                    <li><a href="javascript:void(0)"><i class="fa fa-instagram"></i> </a> </li>
-                    <li><a href="javascript:void(0)"><i class="fa fa-pinterest-p"></i> </a> </li>
-                </ul>
+               
             </div>
         </div>
     </div>

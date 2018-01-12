@@ -10,6 +10,7 @@
 }
 #pie_foto{
 	font-size: 13px;
+	text-align: center;
 	/*background-color:#E6E6E6;*/
 }
 
@@ -149,4 +150,7 @@
 }*/
 .mapita{
 	padding-left: 0;
+}
+.mapita1{
+	margin-left: 25%;
 }
