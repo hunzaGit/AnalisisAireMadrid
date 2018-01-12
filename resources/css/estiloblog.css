@@ -1,6 +1,9 @@
 .page-header{
 	background: url("../images/Madrid/8108693-1.jpg") no-repeat;
 }
+#page_header1{
+	background: url("../images/Blog/mapa.jpg") no-repeat !important;
+}
 
 .parrafito{
 	font-size: 1rem;
