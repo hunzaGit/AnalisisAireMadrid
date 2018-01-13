@@ -942,7 +942,7 @@ header.default nav.navbar.bootsnav.navbar-fixed .menu-icon span:after{
   z-index: 15;
 }
 .overlay-menu .logo-full{
-    display: inline-block;
+    /*display: inline-block;*/
     width: 120px;
 }
 .overlay-menu .logo-full > img{

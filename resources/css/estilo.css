@@ -182,6 +182,11 @@ body{
 }
 
 
+
+.heading_space{
+    font-size: 2.2em;
+}
+
 /*
 #MapaInteractivo{
     background-image: url('../images/Madrid/cap.png');
