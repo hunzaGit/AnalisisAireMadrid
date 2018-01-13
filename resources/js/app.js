@@ -101,10 +101,10 @@ $(document).ready(function () {
                 dataType: 'json',
                 success: function (horaUpdate, textStatus, jqXHR) {
 
-                    if(horaUpdate){
-                        $('#fechaActualizacion').append(horaUpdate.dia);
-                        $('#horaActualizacion').append(horaUpdate.hora);
-                    }else{
+                    if (horaUpdate) {
+                        $('#fechaActualizacion').append("<strong>" + horaUpdate.dia + "</strong>");
+                        $('#horaActualizacion').append("<strong>" + horaUpdate.hora + "</strong>");
+                    } else {
                         $('#fechaActualizacion').append('-');
                         $('#horaActualizacion').append('-');
                     }
@@ -124,73 +124,72 @@ $(document).ready(function () {
             }
     });
 
-    //http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=da800b2b6787ebdc3b4a4ce7422f48a8
 
+    /* *************************************************
+    * *****************  Metereología *****************
+    * ************************************************* */
     $.ajax({
-        //url: "http://api.openweathermap.org/data/2.5/weather?q=Madrid&lang=es&units=metric&appid=da800b2b6787ebdc3b4a4ce7422f48a8",
         url: "https://api.openweathermap.org/data/2.5/weather?q=Madrid,es&lang=es&units=metric&appid=da800b2b6787ebdc3b4a4ce7422f48a8",
         method: "GET",
         success: function (data, textStatus, jqXHR) {
 
-            console.log('*** actual **************');
+            //console.log('*** actual **************');
 
             //console.log('RESPUESTA: ');
-            console.log(data);
+            //console.log(data);
 
-
-            $('#EstadoCielo').text("Estado del cielo: "/* + data.weather[0].description*/);
-            if(data.weather[0].icon)
-                $('#EstadoCielo').after("<img src='http://openweathermap.org/img/w/"+data.weather[0].icon +".png' style='margin: -15px 0;' title='"+data.weather[0].description +"'>");
+            $('#EstadoCielo').append("Estado del cielo:"/* + data.weather[0].description*/);
+            if (data.weather[0].icon)
+                $('#EstadoCielo').after("<img src='http://openweathermap.org/img/w/" + data.weather[0].icon + ".png' style='margin: -15px 0;' title='" + data.weather[0].description + "'><br>");
             else
-                $('#EstadoCielo').after(data.weather[0].description);
-            $('#viento').text("Viento: " + data.wind.speed + "m/s " + convertDir(data.wind.deg));
+                $('#EstadoCielo').after(data.weather[0].description + "<br>");
+
+
+            $('#viento').append("Viento: <strong>" + data.wind.speed.toFixed(1) + "m/s " + convertDir(data.wind.deg) + "</strong><br>");
             //$('#dirViento').text("Dir. viento: " );
-            $('#temperatura').text("Temperatura: " + data.main.temp + "ºC");
+
+
+            $('#temperatura').append("Temperatura: <strong>" + data.main.temp.toFixed(2) + "ºC</strong><br>");
 
 
             const fechaMET = convertTimestamp(data.dt);
-            if(data.dt) {
-                $('#fechaActuMet').append(fechaMET.dia);
-                $('#horaActuMet').append(fechaMET.hora);
-            }else{
+            if (data.dt) {
+                $('#fechaActuMet').append("<strong>" +fechaMET.dia + "</strong>");
+                $('#horaActuMet').append("<strong>" +fechaMET.hora + "</strong>");
+            } else {
                 $('#fechaActuMet').append('-');
                 $('#horaActuMet').append('-');
             }
 
 
+
+
         },
         error: function (jqXHR, statusText, errorThrown) {
-            console.log("Error en AEMET");
+            console.log("Error en openweathermap pidiendo datos actuales");
         }
     });
-
-
 
     $.ajax({
-        //url: "http://api.openweathermap.org/data/2.5/weather?q=Madrid&lang=es&units=metric&appid=da800b2b6787ebdc3b4a4ce7422f48a8",
-        url: "https://api.openweathermap.org/data/2.5/forecast?q=Madrid,es&lang=es&units=metric&cnt=2&appid=da800b2b6787ebdc3b4a4ce7422f48a8",
+        url: "https://api.openweathermap.org/data/2.5/forecast?q=Madrid,es&lang=es&units=metric&appid=da800b2b6787ebdc3b4a4ce7422f48a8",
         method: "GET",
         success: function (data, textStatus, jqXHR) {
-            console.log('*** prediccion **************');
+            //console.log('*** prediccion **************');
 
-            //console.log('RESPUESTA: ');
-            console.dir(data);
+            //console.dir(data);
 
-
-            if(data.list[0].rain['3h']){
-               $('#predicLluvia').text('Precipitaciones: '+data.list[0].rain['3h'] + 'mm');
-            }else{
-                $('#predicLluvia').text('Precipitaciones: No se preveen');
+            if (data.list[0].rain && data.list[0].rain['3h']) {
+                $('#predicLluvia').append('Precipitaciones: <strong>' + data.list[0].rain['3h'].toFixed(2) + 'mm </strong><br>');
+            } else {
+                $('#predicLluvia').append('Precipitaciones: <strong>No se preveen</strong><br>');
             }
-
-
-            //console.log();
 
         },
         error: function (jqXHR, statusText, errorThrown) {
-            console.log("Error en openweathermap");
+            console.log("Error en openweathermap pidiendo prediccion de tiempo");
         }
     });
+
 
 
 });
@@ -212,16 +211,16 @@ function crearHTMLPuntoEstacion(id, infoEstacion, callback = Function()) {
 }
 
 
-function convertDir (deg){
+function convertDir(deg) {
     let val = '';
-    if(deg >=337.5 && deg <= 22.5) val = 'Norte';
-    if(deg <=337.5 && deg >= 292.5) val = 'Noroeste';
-    if(deg <=292.5 && deg >= 247.5) val = 'Oeste';
-    if(deg <=247.5 && deg >= 202.5) val = 'Suroeste';
-    if(deg <=202.5 && deg >= 157.5) val = 'Sur';
-    if(deg <=157.5 && deg >= 112.5) val = 'Sureste';
-    if(deg <=112.5 && deg >= 67.5) val = 'Este';
-    if(deg <=67.5 && deg >= 22.5) val = 'Noreste';
+    if (deg >= 337.5 && deg <= 22.5) val = 'Norte';
+    if (deg <= 337.5 && deg >= 292.5) val = 'Noroeste';
+    if (deg <= 292.5 && deg >= 247.5) val = 'Oeste';
+    if (deg <= 247.5 && deg >= 202.5) val = 'Suroeste';
+    if (deg <= 202.5 && deg >= 157.5) val = 'Sur';
+    if (deg <= 157.5 && deg >= 112.5) val = 'Sureste';
+    if (deg <= 112.5 && deg >= 67.5) val = 'Este';
+    if (deg <= 67.5 && deg >= 22.5) val = 'Noreste';
     return val;
 }
 
@@ -249,7 +248,7 @@ function convertTimestamp(timestamp) {
 
     // ie: 20/01/2018, 14:35
     time = {
-        dia:dd + '/' + mm + '/' + yyyy,
+        dia: dd + '/' + mm + '/' + yyyy,
         hora: hh + ':' + min
     }
 
