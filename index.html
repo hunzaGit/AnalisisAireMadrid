@@ -20,7 +20,7 @@
     <link rel="stylesheet" type="text/css" href="public/resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="public/resources/css/dark.css">
     <link rel="stylesheet" type="text/css" href="public/resources/css/estilo.css">
-    <link rel="shortcut icon" href="public/resources/images/favicon2.png">
+    <link rel="shortcut icon" href="public/resources/images/icono.png">
     <link rel="stylesheet" type="text/css" href="public/resources/css/scrubber.css">
     <link rel="stylesheet" type="text/css" href="public/resources/css/style-map.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 ANNA DEMOSTHENOUS and media queries -->
@@ -40,7 +40,7 @@
 
 <body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<!--Page Loader-->
+<!--Page Loader
 
 <div class="loader">
     <div class="spinner">
@@ -224,46 +224,18 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 ">
-                <h2 class="text-captalize darkcolor bottom20">Sobre el proyecto</h2>
+                <h2 id="titulo_medias" class="text-captalize heading_space">Medias diarias anuales</h2>
             </div>
             <div class="icon_wrap  clearfix">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left bloqueTexto">
 
-                    <strong>¿Cuál es el problema que está tratando de resolver con esta aplicación?</strong>
-
-                    <p>En la comunidad de Madrid cuando se superan determinados niveles de NO2 durante varias horas se
-                        activan una serie de protocolos para intentar evitar que los niveles de contaminación sigan
-                        aumentando. Estos protocolos se activan cuando se superan unos niveles demasiado altos
-                        Dependiendo del nivel de la alerta, estas medidas pueden ser más o menos restrictivas:
-                    </p>
-                    <ul>
-                        <li>Reducción de la velocidad a 70 km/hora en la M-30 y accesos
-                        </li>
-                        <li>Reducción de la velocidad a 70 km/hora en la M-30 y accesos y prohibición del
-                            estacionamiento en el interior de la M-30
-                        </li>
-                        <li>Reducción de la velocidad a 70 km/hora en la M-30 y accesos, prohibición del estacionamiento
-                            y de la circulación al 50% de los vehículos en el interior de la M-30.
-                        </li>
-                        <li>Reducción de la velocidad a 70 km/hora en la M-30 y accesos, prohibición del estacionamiento
-                            y de la circulación al 50% de los vehículos en el interior de la M-30 y en la M-30.
-                        </li>
-                    </ul>
-                    <p class="text-right">
-                        Esto provoca más atascos lo que implica más contaminación, y confusión e irritación en la gente.
-                        Además aunque se delimitan 5 zonas distintas para hacer las mediciones y los niveles altos se
-                        detecten en distintas estaciones, las medidas restrictivas afectan principalmente a la almendra
-                        central de Madrid.
-                        Asi que hemos decidido analizar los datos de este último año para ver si cuando se han activado
-                        las
-                        medidas, realmente han bajado los niveles de contaminación, es decir, si estas medidas son
-                        realmente
-                        útiles.
-                        Otra de las cosas que creemos que podemos cambiar es el la distribución de las zonas de Madrid,
-                        ya
-                        que cuando se activan las medidas se colapsa todo el centro y probablemente no sea necesario.
-
-                    </p>
+				<iframe id="datawrapper-chart-03jtJ" src="https://datawrapper.dwcdn.net/03jtJ/3/" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" style="width: 0; min-width: 100% !important;" height="500"></iframe>
+				<p>Mediante un script en Python hemos calculado las medias diarias de NO<sub>2</sub> en la Comunidad de Madrid, para comprobar si realmente cuando hay episodios de alta contaminacion(franjas rojas), esta misma baja al cabo del tiempo.</p>
+				
+				<p>Como se puede ver en la grafica, cuando se han activado las medidas, la contaminacion ha bajado sustancialmente, pasado un breve periodo de tiempo. Para asegurarnos que la bajada habia sido causa de las restricciones y no de la meteorología y consultamos las condiciones meteorologicas para dichas fechas y en ningun caso se direon lluvias antes de levantar las medidas.</p>
+				
+				<p>Con esto llegamos a la conclusion de que las medidas que impone el ayuntamiento de Madrid son correctas para bajar los niveles de NO<sub>2</sub>, pero tambien creemos que al afectar a un area tan extensa afecta demasiado a la hora de que los ciudadanos hagan una vida normal.</p>
+                    
                 </div>
                 <!--<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <img id="imagenTrafico"
@@ -350,29 +322,6 @@ About Us ends -->
                 <div class="col-sm-12 col-md-12 darkcolor">
                     <h2 class="text-captalize heading_space">Comparación por Zonas</h2>
                     <div class="testimonial center">
-
-
-                        <iframe id="datawrapper-chart-d8tv6" src="https://datawrapper.dwcdn.net/d8tv6/2/" scrolling="no"
-                                frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen"
-                                webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen"
-                                oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen"
-                                style="width: 0; min-width: 100% !important;" height="500"></iframe>
-                        <script type="text/javascript">if ("undefined" == typeof window.datawrapper) window.datawrapper = {};
-                        window.datawrapper["d8tv6"] = {}, window.datawrapper["d8tv6"].embedDeltas = {
-                            "100": 625,
-                            "200": 550,
-                            "300": 525,
-                            "400": 525,
-                            "500": 500,
-                            "600": 500,
-                            "700": 500,
-                            "800": 500,
-                            "900": 500,
-                            "1000": 500
-                        }, window.datawrapper["d8tv6"].iframe = document.getElementById("datawrapper-chart-d8tv6"), window.datawrapper["d8tv6"].iframe.style.height = window.datawrapper["d8tv6"].embedDeltas[Math.min(1e3, Math.max(100 * Math.floor(window.datawrapper["d8tv6"].iframe.offsetWidth / 100), 100))] + "px", window.addEventListener("message", function (a) {
-                            if ("undefined" != typeof a.data["datawrapper-height"]) for (var b in a.data["datawrapper-height"]) if ("d8tv6" == b) window.datawrapper["d8tv6"].iframe.style.height = a.data["datawrapper-height"][b] + "px"
-                        });</script>
-
                         <div id="contenedorScrubber">
                             <div id=scrubber>
                                 <div class='scrubber-window'>

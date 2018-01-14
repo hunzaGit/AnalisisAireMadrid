@@ -48,6 +48,11 @@ body{
     list-style: none;
 }
 
+#integrantes li{
+    line-height: 30px;
+}
+
+
 #m-parallaxTrafico{
     background-image: url('../images/Madrid/retencion copia.jpg') !important;
     padding: 11em;
@@ -187,6 +192,10 @@ body{
     font-size: 2.2em;
 }
 
+
+#titulo_medias{
+	text-align:center;
+}
 /*
 #MapaInteractivo{
     background-image: url('../images/Madrid/cap.png');

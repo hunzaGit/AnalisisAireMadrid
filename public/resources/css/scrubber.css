@@ -11,8 +11,8 @@ body {
 }
 
 :root{
-    --ancho-frame: 1200px;/*1200*/
-    --alto-frame: 324px;/*324*/
+    --ancho-frame: 1400px;/*1200*/
+    --alto-frame: 400px;/*324*/
     --mitad-frame: 600px;
     --porcentaje-extra-barra: 5%;
     --tamano-barra: calc(calc(calc(var(--alto-frame) * 0.05 )*2) + var(--alto-frame)); /* (var(--alto-frame) * var(--porcentaje-extra-barra) )*2 + var(--alto-frame)*/
@@ -78,7 +78,7 @@ body {
     right: 0px;
     width: var(--ancho-frame);
     /*background-image: url(https://unsplash.it/500/400?image=20);*/
-    background-image: url("../images/Graficas/Grafica1.png");
+    background-image: url("../images/Graficas/captura2.png");
     background-size: 100%;
 }
 
@@ -89,6 +89,6 @@ body {
 .scrubber-window .scrubber-izquierda div {
     width: var(--ancho-frame);
     /*background-image: url(https://unsplash.it/500/400?image=23);*/
-    background-image: url("../images/Graficas/Grafica2.png");
+    background-image: url("../images/Graficas/captura.png");
     background-size: 100%;
 }
