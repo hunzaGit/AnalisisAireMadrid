@@ -11,8 +11,8 @@ body {
 }
 
 :root{
-    --ancho-frame: 1400px;/*1200*/
-    --alto-frame: 400px;/*324*/
+    --ancho-frame: 1300px;/*1200*/
+    --alto-frame: 370px;/*324*/
     --mitad-frame: 600px;
     --porcentaje-extra-barra: 5%;
     --tamano-barra: calc(calc(calc(var(--alto-frame) * 0.05 )*2) + var(--alto-frame)); /* (var(--alto-frame) * var(--porcentaje-extra-barra) )*2 + var(--alto-frame)*/

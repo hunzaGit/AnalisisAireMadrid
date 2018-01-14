@@ -3,6 +3,14 @@
 }
 #page_header1{
 	background: url("../images/Blog/mapa.jpg") no-repeat !important;
+	background-size: 100% !important;
+}
+.texto-cabecera{
+	color: #515A5F !important;
+}
+
+.breadcrumb li, .breadcrumb li a {
+    color: #515A5F;
 }
 
 .parrafito{
