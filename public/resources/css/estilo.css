@@ -189,6 +189,14 @@ body{
 #contenedorScrubber{
 	margin-bottom:20px;
 }
+.parallax-bg{
+	background: url("../images/Madrid/parallax1.jpg") no-repeat;
+	/*background-size: 100% !important;*/
+}
+/*.bgfull-imgtwo{
+	background: url("../images/Madrid/parallax2.jpg") no-repeat;*/
+	/*background-size: 100% !important;*/
+/*}*/
 
 .heading_space{
     font-size: 2.2em;
