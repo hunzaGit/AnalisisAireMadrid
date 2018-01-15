@@ -1,17 +1,43 @@
-.page-header{
-	background: url("../images/Madrid/8108693-1.jpg") no-repeat;
+#page_header2{
+	background: url("../images/Madrid/2.jpg") no-repeat !important;
+	background-size: 100% !important;
 }
 #page_header1{
-	background: url("../images/Blog/mapa.jpg") no-repeat !important;
+	background: url("../images/Blog/2.jpg") no-repeat !important;
+	background-size: 100% !important;
+}
+#page_header3{
+	background: url("../images/Blog/bibliografia1.jpg") no-repeat !important;
 	background-size: 100% !important;
 }
 .texto-cabecera{
 	color: #515A5F !important;
 }
 
-.breadcrumb li, .breadcrumb li a {
+/*.breadcrumb li, .breadcrumb li a {
     color: #515A5F;
 }
+.blanco li, .blanco li a {
+    color: #FFF;
+}*/
+.cabesera{
+	background-color: rgba(0, 0, 255, 0.3);
+}
+header.default nav.navbar.bootsnav.navbar-fixed ul.nav > li > a{
+	color: #FFF;
+}
+
+.menu-icon span, .menu-icon span::before, .menu-icon span::after, header.default nav.navbar.bootsnav.navbar-fixed .menu-icon span, header.default nav.navbar.bootsnav.navbar-fixed .menu-icon span::before, header.default nav.navbar.bootsnav.navbar-fixed .menu-icon span::after{
+	background: #FFF;
+}
+
+.top40{
+	padding-top:15px;
+	margin-top:15px;
+}
+/*.iconito{
+	background: #FFF;
+}*/
 
 .parrafito{
 	font-size: 1rem;
@@ -32,14 +58,32 @@
 .lista {
 	font-size: 1rem;
 	list-style-type: disc;
-	padding-left: 1em;
+	padding-left: 1.5em;
 	padding-right: 0;
 	margin-bottom: 15px;
 	font-weight: 300;
-	line-height: 1.34rem;
+	line-height: 1.44rem;
 	text-align: justify;
 }
-
+.lista ul{
+	font-size: 1rem;
+	list-style-type: circle;
+	padding-left: 1.5em;
+	padding-right: 0;
+	margin-bottom: 15px;
+	font-weight: 300;
+	line-height: 1.44rem;
+	text-align: justify;
+}
+/*
+ul{
+    list-style: initial;
+    padding-left: 1.5em;
+    font-weight: 300;
+    line-height: 1.44rem;
+    margin-bottom: 15px;
+	font-size: 1rem;
+}*/
 .enlaces{
 	color: #337ab7;
 	font-weight: 400;
@@ -166,7 +210,4 @@
 	margin-left: 25%;
 }
 
-ul{
-    list-style: initial;
-    padding-left: 1.5em;
-}
+
