@@ -6,7 +6,7 @@ const anchoImagen =scrubberWindow.clientWidth; //1200
 
 
 scrubberWindow.onmousemove = function (event) {
-    var ajustePunteroBarra = -13;
+    var ajustePunteroBarra = 21; //-13
     // valor para ajustar el puntero con la barra se calcula poniendo el sobre el inicio del frame
     // haciendo coincidir con la barra. (el console.log('resta'...) indica el valor)
 
