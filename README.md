@@ -18,7 +18,7 @@ Posteriormente se realizará una [pequeña web](https://hunzagit.github.io/Anali
 
 ## Scripts
 
-### Script 1 - Media Anual por Dias
+### Script 1 - [Media Anual por Dias](https://github.com/hunzaGit/AnalisisAireMadrid/tree/master/Scripts/1%20-%20Media%20anual%20por%20dias)
 
 Este script coge los datos diarios del año 2017 de todas las estaciones, y quedandose solo con aquellas filas que indican los valores de NO2, calcula los valores medios de NO2 de la Comunidad de Madrid por dias.
 
@@ -26,7 +26,7 @@ Genera un archivo con el valor medio de NO2 por cada dia, formado por tantas fil
    
     "fecha; valormedio".
 
-### Script 2 - Media Anual por Zonas xs
+### Script 2 - [Media Anual por Zonas xs](https://github.com/hunzaGit/AnalisisAireMadrid/tree/master/Scripts/2%20-%20Media%20anual%20por%20zonas)
 
 Estre script coge los datos diarios del año 2017 de todas las estaciones, quedandose solo con aquellas filas que indican los valores de NO2. Se encarga de calcular la media diaria de NO2 de cada zona de las que define la Comunidad de Madrid.
 
@@ -34,7 +34,7 @@ Genera un archivo con el valor medio de NO2 por cada zona y dia, formado por tan
 
     "fecha;valorZona1;valorZona2;valorZona3;valorZona4;valorZona5".
 
-### Script 3 - Cantidad diaria por estacion 
+### Script 3 - [Cantidad diaria por estacion](https://github.com/hunzaGit/AnalisisAireMadrid/tree/master/Scripts/3%20-%20Cantidad%20diaria%20por%20estacion)
 
 Este script coge los datos diarios del año 2017 de todas las estaciones, quedandose solo con aquellas filas que indican los valores de NO2. 
 
@@ -42,7 +42,7 @@ Genera un archivo con el valor medio de NO2 por cada estacion y dia, formado por
 
     "fecha;estaciones(004;008;011;016;017;018;024;027;035;036;038;039;040;047;048;049;050;054;055;056;057;058;059;060)"
 
-### Script 4 - Cantidad diaria por zonas 
+### Script 4 - [Cantidad diaria por zonas](https://github.com/hunzaGit/AnalisisAireMadrid/tree/master/Scripts/4%20-%20Cantidad%20diaria%20por%20zonas)
 
 Este script coge los datos diarios del año 2017 de todas las estaciones, quedandose solo con aquellas filas que indican los valores de NO2. 
 
@@ -54,7 +54,7 @@ Genera 5 archivos con los distintos valores de NO2 de cada estacion por cada zon
     - **Zona 4**: "fecha;estaciones(024;058)"
     - **Zona 5**: "fecha;estaciones(017;018;056)"
 
-### Script 5 - Estaciones por zonas propuestas
+### Script 5 - [Estaciones por zonas propuestas](https://github.com/hunzaGit/AnalisisAireMadrid/tree/master/Scripts/5%20-%20Estaciones%20por%20zonas%20propuestas)
 
 Este script coge los datos diarios del año 2017 de todas las estaciones, quedandose solo con aquellas filas que indican los valores de NO2. 
 
@@ -67,7 +67,7 @@ Genera 6 archivos con los distintos valores de NO2 de cada estacion por cada zon
     - **Zona 5**: "fecha;estaciones(017;036;040;054)"
     - **Zona 6**: "fecha;estaciones(018;024;058;060)"
 
-### Script 6 - Media Anual por Zonas propuestas 
+### Script 6 - [Media Anual por Zonas propuestas](https://github.com/hunzaGit/AnalisisAireMadrid/tree/master/Scripts/6%20-%20Media%20anual%20por%20zonas%20propuestas)
 
 Este script coge los datos diarios del año 2017 de todas las estaciones, quedandose solo con aquellas filas que indican los valores de NO2. Se encarga de calcular la media diaria de NO2 de cada una de las nuevas zonas que hemos delimitado.
 
@@ -75,7 +75,7 @@ Genera un archivo con el valor medio de NO2 por cada zona y dia, formado por tan
 
 
 
-### Script 7 - Contaminacion en tiempo real 
+### Script 7 - [Contaminacion en tiempo real](https://github.com/hunzaGit/AnalisisAireMadrid/tree/master/Scripts/7%20-%20Contaminacion%20en%20tiempo%20real)
 
 En este script se utiliza el fichero de datos con los datos de contaminación del día actual (que se actualiza cada hora entre los minutos 20 y 30).
 
