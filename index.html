@@ -40,7 +40,7 @@
 
 <body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<!--Page Loader
+<!--Page Loader-->
 
 <div class="loader">
     <div class="spinner">
@@ -64,9 +64,10 @@
                     <li class="active">
                         <a href="#home" class="scroll">Home</a></li>
                     <li><a href="#MapaInteractivo" class="scroll">Mapa Interactivo</a></li>
-                    <li><a href="public/sobreProyecto.html">Sobre el proyecto</a></li>
-                    <li><a href="public/estudio.html">Estudio</a></li>
-					<li><a href="public/bibliografia.html">Bibliografia</a></li>
+                    <li><a href="#SobreProyecto" class="scroll">Introducción</a></li>
+                    <li><a href="#maxo-blog" class="scroll">Sobre el proyecto</a></li>
+                    <!--<li><a href="public/estudio.html">Estudio</a></li>
+					<li><a href="public/bibliografia.html">Bibliografia</a></li> -->
                     <li><a href="#team" class="scroll">El equipo</a></li>
                 </ul>
             </div>
@@ -93,10 +94,11 @@
                             <span>01.</span> <a href="#home" class="scroll">Home</a>
                         </li>
                         <li><span>02.</span> <a href="#MapaInteractivo" class="scroll">Mapa Interactivo</a></li>
-                        <li><span>03.</span> <a href="public/sobreProyecto.html">Sobre el proyecto</a></li>
-                        <li><span>04.</span> <a href="public/estudio.html">El estudio</a></li>
-						<li><span>05.</span> <a href="public/bibliografia.html">Bibliografia</a></li>
-                        <li><span>06.</span> <a href="#team" class="scroll">El equipo</a></li>
+                        <li><span>03.</span> <a href="#SobreProyecto" class="scroll">Introducción</a></li>
+                        <li><span>04.</span> <a href="#maxo-blog" class="scroll">Sobre el proyecto</a></li>
+                        <!--<li><span>04.</span> <a href="public/estudio.html">El estudio</a></li>
+						<li><span>05.</span> <a href="public/bibliografia.html">Bibliografia</a></li>-->
+                        <li><span>05.</span> <a href="#team" class="scroll">El equipo</a></li>
                     </ul>
                 </div>
             </div>
@@ -223,8 +225,10 @@
 
 <!--About Us-->
 <section id="SobreProyecto" class="padding">
+
     <div class="container">
         <div class="row">
+            <h2 class="text-captalize darkcolor bottom20">Introducción</h2>
             <div class="col-sm-12 ">
                 <h2 id="titulo_medias" class="text-captalize heading_space">Medias diarias anuales</h2>
             </div>
@@ -232,7 +236,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left bloqueTexto">
 
 				<iframe id="datawrapper-chart-03jtJ" src="https://datawrapper.dwcdn.net/03jtJ/3/" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" style="width: 0; min-width: 100% !important;" height="500"></iframe>
-				<p>Mediante un script en Python hemos calculado las medias diarias de NO<sub>2</sub> en la Comunidad de Madrid, para comprobar si realmente cuando hay episodios de alta contaminacion(franjas rojas), esta misma baja al cabo del tiempo.</p>
+				<p>Mediante un script en Spark (usando Python como lenguaje de scripting) hemos calculado las medias diarias de NO<sub>2</sub> en la Comunidad de Madrid, para comprobar si realmente cuando hay episodios de alta contaminacion(franjas rojas), esta misma baja al cabo del tiempo.</p>
 				
 				<p>Como se puede ver en la grafica, cuando se han activado las medidas, la contaminacion ha bajado sustancialmente, pasado un breve periodo de tiempo. Para asegurarnos que la bajada habia sido causa de las restricciones y no de la meteorología y consultamos las condiciones meteorologicas para dichas fechas y en ningun caso se direon lluvias antes de levantar las medidas.</p>
 				
@@ -368,9 +372,94 @@ About Us ends -->
 </section>
 <!--Parallax Ends-->
 
+
+
+<!--Blog-->
+<section id="maxo-blog" class="padding bglight darkcolor">
+    <div class="container">
+        <div class="row">
+            <h2 class="text-captalize darkcolor bottom20">Sobre el proyecto</h2>
+            <div class="col-sm-12 text-center">
+                <!--<p class="title bottom0">Lorem ipsum sit</p>-->
+
+                <div class="our-blog">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="ourblog">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="image">
+                                                <a href="public/sobreProyecto.html"><img src="public/resources/images/Madrid/reglas.jpg"
+                                                                         alt="blog"></a>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="blog_desc">
+                                                <h3 class="top25 bottom20"><a href="public/sobreProyecto.html">Sobre nuestro proyecto</a></h3>
+                                                <p class="bottom20">Aqui encontrará las respuestas a las preguntas propuestas por el profesor, entre ellas se encuentra la informacion sobre los scripts realizados, las tecnologias utilizadas y nuestras experiencias.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ourblog">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="image">
+                                                <a href="public/estudio.html"><img src="public/resources/images/Madrid/mapablog.jpg"
+                                                                         alt="blog"></a>
+                                                
+                                            </div>
+
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="blog_desc">
+                                                <h3 class="top25 bottom20"><a href="public/estudio.html">Estudio y diseño de las nuevas zonas</a></h3>
+                                                <p class="bottom20">En esta pagina se explica al detalle el proceso seguido para el estudio y posterior diseño de las nuevas zonas que proponemos para las restricciones.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="swiper-slide">
+                                <div class="ourblog">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="image">
+                                                <a href="public/bibliografia.html"><img src="public/resources/images/Madrid/bibliografia.jpg"
+                                                                         alt="blog"></a>
+                                                
+                                            </div>
+
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="blog_desc">
+                                                <h3 class="top25 bottom20"><a href="public/bibliografia.html">Bibliografia</a></h3>
+                                                <p class="bottom20">Aqui encontrará los enlaces que nos han resultado utiles para la elaboracion del proyecto.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!-- <div class="swiper-pagination top20"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Blog ends -->
+
+
 <!--Latest Updates-->
 <section class="bgfull-imgtwo parallax" id="maxo_news">
-    <div class=" padding darkcolor">
+    <div class=" padding darkcolor" id="paddingMapaParallax">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -381,8 +470,8 @@ About Us ends -->
                                 <div class="update_slide">
                                     <div class="latest_updates top30">
                                         <div class="updatephoto">
-                                           <!-- <img src="public/resources/images/update1.jpg" alt="">
-                                            <a href="javascript:void(0)" class="ivydatedate">19 apr</a>-->
+                                            <!-- <img src="public/resources/images/update1.jpg" alt="">
+                                             <a href="javascript:void(0)" class="ivydatedate">19 apr</a>-->
                                         </div>
                                         <div class="update_text">
                                             <!--<h6 class="bottom20"><a href="public/sobreProyecto.html">Capitalize on hanging
@@ -422,88 +511,6 @@ About Us ends -->
     </div>
 </section>
 <!--Latest Updates ends-->
-
-<!--Blog-->
-<section id="maxo-blog" class="padding bglight darkcolor">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <p class="title bottom0">Lorem ipsum sit</p>
-                <h2 class="text-capitalize heading_space">our blog</h2>
-                <div class="our-blog">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <div class="ourblog">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <div class="image">
-                                                <a href="blog.html"><img src="public/resources/images/Madrid/reglas.jpg"
-                                                                         alt="blog"></a>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <div class="blog_desc">
-                                                <h3 class="top25 bottom20"><a href="public/sobreProyecto.html">Sobre nuestro proyecto</a></h3>
-                                                <p class="bottom20">Aqui encontrará las respuestas a las preguntas propuestas por el profesor, entre ellas se encuentra la informacion sobre los scripts realizados, las tecnologias utilizadas y nuestras experiencias.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="ourblog">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <div class="image">
-                                                <a href="blog.html"><img src="public/resources/images/Madrid/mapablog.jpg"
-                                                                         alt="blog"></a>
-                                                
-                                            </div>
-
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <div class="blog_desc">
-                                                <h3 class="top25 bottom20"><a href="public/estudio.html">Estudio y diseño de las nuevas zonas</a></h3>
-                                                <p class="bottom20">En esta pagina se explica al detalle el proceso seguido para el estudio y posterior diseño de las nuevas zonas que proponemos para las restricciones.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-							<div class="swiper-slide">
-                                <div class="ourblog">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <div class="image">
-                                                <a href="blog.html"><img src="public/resources/images/Madrid/bibliografia.jpg"
-                                                                         alt="blog"></a>
-                                                
-                                            </div>
-
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <div class="blog_desc">
-                                                <h3 class="top25 bottom20"><a href="public/bibliografia.html">Bibliografia</a></h3>
-                                                <p class="bottom20">Aqui encontrará los enlaces que nos han resultado utiles para la elaboracion del proyecto.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="swiper-pagination top20"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--Blog ends -->
-
 
 <!-- Our Team-->
 <section class="padding" id="team">

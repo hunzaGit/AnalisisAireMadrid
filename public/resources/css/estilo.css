@@ -9,7 +9,7 @@ body{
 
 
 :root{
-    --background-gris: rgba(212, 212, 212, 0.4);
+    --background-gris: rgba(231, 231, 231, 0.4); /*rgba(212, 212, 212, 0.4)*/
 
 }
 
@@ -63,7 +63,7 @@ body{
 }
 
 #maxo-testimonials{
-    background-color: var(--background-gris) !important;
+    /*background-color: var(--background-gris) !important;*/
     /*background: url("../images/bgfull-1.jpg") no-repeat; style.css:1447   */
 
 }
@@ -215,3 +215,7 @@ body{
     background-position-y: 15%;
 }
 */
+
+#paddingMapaParallax{
+    padding: 6.5rem 0 !important;
+}

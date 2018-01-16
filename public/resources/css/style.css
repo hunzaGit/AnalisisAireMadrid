@@ -1448,10 +1448,12 @@ Swiper & Revotion*/
     /*background: url("../images/bgfull-1.jpg") no-repeat;*/
 }
 .bgfull-imgtwo{
-    background: url("../images/Madrid/parallax2-4.jpg") no-repeat;
+    background: url("../images/Madrid/parallax2-1 copia.jpg") no-repeat;
+    background-size: 100%;
 }
 .parallax-bg{
     background: url("../images/Madrid/parallax1.jpg") no-repeat;
+
 }
 .page-header{
     background: url("../images/page-header.jpg") no-repeat;
