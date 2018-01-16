@@ -2,11 +2,11 @@
 
 ## Descripción
 
-En el marco de trabajo de la asignatura de [Cloud Computing and Big Data de la UCM](http://www.fdi.ucm.es/Pub/ImpresoFichaDocente.aspx?Id=1312) se realizará un análisis detallado de compuestos químicos del aire que utiliza el Ayuntamiento de Madrid para poner en marcha los periodos de restricciones por alta contaminación, comprobando el resultado de dichos periodos a lo largo del año.
+En el marco de trabajo de la asignatura de [Cloud Computing and Big Data de la UCM](http://www.fdi.ucm.es/Pub/ImpresoFichaDocente.aspx?Id=1312) se ha realizado un análisis detallado del NO<sub>2</sub> del aire de la ciudad de Madrid, compuesto que utiliza el Ayuntamiento para poner en marcha los periodos de restricciones por alta contaminación, comprobando el resultado de dichos periodos a lo largo del año.
 
-Se utilizarán los datos proporcionados por el Ayuntamiento atraves de su [portal de datos abiertos](http://datos.madrid.es/portal/site/egob/) de los contaminantes recogidos por las distintas estaciones repartidas por el municipio. Se utilizará Apache Spark para el análisis de datos, utilizando una máquina virtual en Amazon AWS con el servicio EC2 para su procesado y un Bucket S3 para su almacenamiento.
+Se han utilizado los datos proporcionados por el Ayuntamiento atraves de su [portal de datos abiertos](http://datos.madrid.es/portal/site/egob/) de los contaminantes recogidos por las distintas estaciones repartidas por el municipio. Se ha utilizado Apache Spark para el análisis de datos, utilizando una máquina virtual en Amazon AWS con el servicio EC2 para su procesado y un Bucket S3 para su almacenamiento.
 
-Posteriormente se realizará una [pequeña web](https://hunzagit.github.io/AnalisisAireMadrid/) para explicar el proceso y los resultados.
+El proyecto tiene una [pequeña web](https://hunzagit.github.io/AnalisisAireMadrid/) para explicar el proceso y los resultados y un mapa interactivo para mostrar los niveles de NO<sub>2</sub> de las estaciones en tiempo real .
 
 ## Entorno
 
@@ -26,7 +26,7 @@ Genera un archivo con el valor medio de NO2 por cada dia, formado por tantas fil
    
     "fecha; valormedio".
 
-### Script 2 - [Media Anual por Zonas xs](https://github.com/hunzaGit/AnalisisAireMadrid/tree/master/Scripts/2%20-%20Media%20anual%20por%20zonas)
+### Script 2 - [Media Anual por Zonas](https://github.com/hunzaGit/AnalisisAireMadrid/tree/master/Scripts/2%20-%20Media%20anual%20por%20zonas)
 
 Estre script coge los datos diarios del año 2017 de todas las estaciones, quedandose solo con aquellas filas que indican los valores de NO2. Se encarga de calcular la media diaria de NO2 de cada zona de las que define la Comunidad de Madrid.
 
