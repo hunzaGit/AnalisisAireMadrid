@@ -10,7 +10,7 @@ El proyecto tiene una [pequeña web](https://hunzagit.github.io/AnalisisAireMadr
 
 ## Entorno
 
- - **Python** 3.3.7
+ - **Python** 2.7.12
  - **Apache Spark** 2.2.0
  - **AWS EC2** t2.nano
  - **Ubuntu** 16.04 
