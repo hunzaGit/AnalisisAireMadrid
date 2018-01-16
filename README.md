@@ -14,3 +14,48 @@ Posteriormente se realizará una [pequeña web](https://hunzagit.github.io/Anali
  - **Apache Spark** 2.2.0
  - **AWS EC2** t2.nano
  - **Ubuntu** 16.04 
+
+
+## Scripts
+
+### Script 1 - Media Anual por Dias
+
+Este script coge los datos diarios del año 2017 de todas las estaciones, y quedandose solo con aquellas filas que indican los valores de NO2, calcula los valores medios de NO2 de la Comunidad de Madrid por dias.
+Genera un archivo con el valor medio de NO2 por cada dia, formado por tantas filas como dias con el siguiente formato: "fecha; valormedio;".
+
+### Script 2 - Media Anual por Zonas - script2.py en la carpeta Script2
+
+Estre script coge los datos diarios del año 2017 de todas las estaciones, quedandose solo con aquellas filas que indican los valores de NO2. Se encarga de calcular la media diaria de NO2 de cada zona de las que define la Comunidad de Madrid.
+Genera un archivo con el valor medio de NO2 por cada zona y dia, formado por tantas filas cono dias con el siguiente formato: "fecha;valorZona1;valorZona2;valorZona3;valorZona4;valorZona5;".
+
+### Script 3 - Media Diaria por Estaciones - script3_estacionespordia.py
+
+Este script coge los datos diarios del año 2017 de todas las estaciones, quedandose solo con aquellas filas que indican los valores de NO2. 
+Genera un archivo con el valor medio de NO2 por cada estacion y dia, formado por tantas filas cono dias con el siguiente formato: "fecha;estacion004;estacion008;estacion011;estacion016;estacion017;estacion018;estacion024;estacion027;estacion035;estacion036;estacion038;estacion039;estacion040;estacion047;estacion048;estacion049;estacion050;estacion054;estacion055;estacion056;estacion057;estacion058;estacion059;estacion060".
+
+### Script 4 - Estaciones por Zonas Comunidad de Madrid - script3_estacionespordia_porzona.py
+
+Este script coge los datos diarios del año 2017 de todas las estaciones, quedandose solo con aquellas filas que indican los valores de NO2. 
+Genera 5 archivos con los distintos valores de NO2 de cada estacion por cada zona que delimita la Comunidad de Madrid. Teniendo cada archivo el siguiente formato:
+- **Zona** 1: "fecha;estacion004;estacion008;estacion011;estacion035;estacion038;estacion039;estacion047;estacion048;estacion049;estacion050"
+- **Zona** 2: "fecha;estacion036;estacion040;estacion054"
+- **Zona** 3: "fecha;estacion016;estacion027;estacion055;estacion057;estacion059;estacion060"
+- **Zona** 4: "fecha;estacion024;estacion058"
+- **Zona** 5: "fecha;estacion017;estacion018;estacion056"
+
+### Script 5 - Estaciones por zonas nuevas - script3_estacionespordia_porzonasnuevas.py
+
+Este script coge los datos diarios del año 2017 de todas las estaciones, quedandose solo con aquellas filas que indican los valores de NO2. 
+Genera 6 archivos con los distintos valores de NO2 de cada estacion por cada zona nueva que nosotros hemos delimitado. Teniendo cada archivo el siguiente formato:
+
+- **Zona 1: "fecha;estacion004;estacion035;estacion038;estacion048"
+- **Zona 2: "fecha;estacion011;estacion039;estacion050"
+- **Zona 3: "fecha;estacion008;estacion047;estacion049;estacion056"
+- **Zona 4: "fecha;estacion016;estacion027;estacion055;estacion057;estacion059"
+- **Zona 5: "fecha;estacion017;estacion036;estacion040;estacion054"
+- **Zona 6: "fecha;estacion018;estacion024;estacion058;estacion060"
+
+### Script 6 - Media Anual por Zonas Nuevas -script2.py en la carpeta script 5
+
+Estre script coge los datos diarios del año 2017 de todas las estaciones, quedandose solo con aquellas filas que indican los valores de NO2. Se encarga de calcular la media diaria de NO2 de cada una de las nuevas zonas que hemos delimitado.
+Genera un archivo con el valor medio de NO2 por cada zona y dia, formado por tantas filas cono dias con el siguiente formato: "fecha;zona1;zona2;zona3;zona4;zona5;zona6".
