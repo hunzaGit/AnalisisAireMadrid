@@ -4,7 +4,7 @@ from pyspark import SparkConf, SparkContext
 #El script da como resultado, por cada linea, las cantidades de NO2 (en cada una de las 24 estaciones) 
 #en cada día anyo que tuviese datos registrados y validos
 
-conf = SparkConf().setMaster('local').setAppName('CantidadDiariaPorEstacion')
+conf = SparkConf().setMaster('local').setAppName('Cantidad_Diaria_Por_Estacion')
 sc = SparkContext(conf = conf)
 
 #Lectura del fichero 

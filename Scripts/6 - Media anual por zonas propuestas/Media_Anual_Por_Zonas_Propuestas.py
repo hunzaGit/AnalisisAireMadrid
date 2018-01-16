@@ -1,6 +1,6 @@
 from pyspark import SparkConf, SparkContext
 
-conf = SparkConf().setMaster('local').setAppName('MediaAnualPorDias')
+conf = SparkConf().setMaster('local').setAppName('Media_anual_por_zonas_propuestas')
 sc = SparkContext(conf = conf)
 
 #importamos el fichero 

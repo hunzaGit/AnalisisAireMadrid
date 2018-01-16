@@ -21,41 +21,86 @@ Posteriormente se realizará una [pequeña web](https://hunzagit.github.io/Anali
 ### Script 1 - Media Anual por Dias
 
 Este script coge los datos diarios del año 2017 de todas las estaciones, y quedandose solo con aquellas filas que indican los valores de NO2, calcula los valores medios de NO2 de la Comunidad de Madrid por dias.
-Genera un archivo con el valor medio de NO2 por cada dia, formado por tantas filas como dias con el siguiente formato: "fecha; valormedio;".
 
-### Script 2 - Media Anual por Zonas - script2.py en la carpeta Script2
+Genera un archivo con el valor medio de NO2 por cada dia, formado por tantas filas como dias con el siguiente formato:
+   
+    "fecha; valormedio".
+
+### Script 2 - Media Anual por Zonas xs
 
 Estre script coge los datos diarios del año 2017 de todas las estaciones, quedandose solo con aquellas filas que indican los valores de NO2. Se encarga de calcular la media diaria de NO2 de cada zona de las que define la Comunidad de Madrid.
-Genera un archivo con el valor medio de NO2 por cada zona y dia, formado por tantas filas cono dias con el siguiente formato: "fecha;valorZona1;valorZona2;valorZona3;valorZona4;valorZona5;".
 
-### Script 3 - Media Diaria por Estaciones - script3_estacionespordia.py
+Genera un archivo con el valor medio de NO2 por cada zona y dia, formado por tantas filas cono dias con el siguiente formato: 
 
-Este script coge los datos diarios del año 2017 de todas las estaciones, quedandose solo con aquellas filas que indican los valores de NO2. 
-Genera un archivo con el valor medio de NO2 por cada estacion y dia, formado por tantas filas cono dias con el siguiente formato: "fecha;estacion004;estacion008;estacion011;estacion016;estacion017;estacion018;estacion024;estacion027;estacion035;estacion036;estacion038;estacion039;estacion040;estacion047;estacion048;estacion049;estacion050;estacion054;estacion055;estacion056;estacion057;estacion058;estacion059;estacion060".
+    "fecha;valorZona1;valorZona2;valorZona3;valorZona4;valorZona5".
 
-### Script 4 - Estaciones por Zonas Comunidad de Madrid - script3_estacionespordia_porzona.py
+### Script 3 - Cantidad diaria por estacion 
 
 Este script coge los datos diarios del año 2017 de todas las estaciones, quedandose solo con aquellas filas que indican los valores de NO2. 
+
+Genera un archivo con el valor medio de NO2 por cada estacion y dia, formado por tantas filas cono dias con el siguiente formato: 
+
+    "fecha;estaciones(004;008;011;016;017;018;024;027;035;036;038;039;040;047;048;049;050;054;055;056;057;058;059;060)"
+
+### Script 4 - Cantidad diaria por zonas 
+
+Este script coge los datos diarios del año 2017 de todas las estaciones, quedandose solo con aquellas filas que indican los valores de NO2. 
+
 Genera 5 archivos con los distintos valores de NO2 de cada estacion por cada zona que delimita la Comunidad de Madrid. Teniendo cada archivo el siguiente formato:
-- **Zona** 1: "fecha;estacion004;estacion008;estacion011;estacion035;estacion038;estacion039;estacion047;estacion048;estacion049;estacion050"
-- **Zona** 2: "fecha;estacion036;estacion040;estacion054"
-- **Zona** 3: "fecha;estacion016;estacion027;estacion055;estacion057;estacion059;estacion060"
-- **Zona** 4: "fecha;estacion024;estacion058"
-- **Zona** 5: "fecha;estacion017;estacion018;estacion056"
 
-### Script 5 - Estaciones por zonas nuevas - script3_estacionespordia_porzonasnuevas.py
+    - **Zona 1**: "fecha;estaciones(004;008;011;035;038;039;047;048;049;050)"
+    - **Zona 2**: "fecha;estaciones(036;040;054)"
+    - **Zona 3**: "fecha;estaciones(016;027;055;057;059;060)"
+    - **Zona 4**: "fecha;estaciones(024;058)"
+    - **Zona 5**: "fecha;estaciones(017;018;056)"
+
+### Script 5 - Estaciones por zonas propuestas
 
 Este script coge los datos diarios del año 2017 de todas las estaciones, quedandose solo con aquellas filas que indican los valores de NO2. 
+
 Genera 6 archivos con los distintos valores de NO2 de cada estacion por cada zona nueva que nosotros hemos delimitado. Teniendo cada archivo el siguiente formato:
+    
+    - **Zona 1**: "fecha;estaciones(004;035;038;048)"
+    - **Zona 2**: "fecha;estaciones(011;039;050)"
+    - **Zona 3**: "fecha;estaciones(008;047;049;056)"
+    - **Zona 4**: "fecha;estaciones(016;027;055;057;059)"
+    - **Zona 5**: "fecha;estaciones(017;036;040;054)"
+    - **Zona 6**: "fecha;estaciones(018;024;058;060)"
 
-- **Zona 1: "fecha;estacion004;estacion035;estacion038;estacion048"
-- **Zona 2: "fecha;estacion011;estacion039;estacion050"
-- **Zona 3: "fecha;estacion008;estacion047;estacion049;estacion056"
-- **Zona 4: "fecha;estacion016;estacion027;estacion055;estacion057;estacion059"
-- **Zona 5: "fecha;estacion017;estacion036;estacion040;estacion054"
-- **Zona 6: "fecha;estacion018;estacion024;estacion058;estacion060"
+### Script 6 - Media Anual por Zonas propuestas 
 
-### Script 6 - Media Anual por Zonas Nuevas -script2.py en la carpeta script 5
+Este script coge los datos diarios del año 2017 de todas las estaciones, quedandose solo con aquellas filas que indican los valores de NO2. Se encarga de calcular la media diaria de NO2 de cada una de las nuevas zonas que hemos delimitado.
 
-Estre script coge los datos diarios del año 2017 de todas las estaciones, quedandose solo con aquellas filas que indican los valores de NO2. Se encarga de calcular la media diaria de NO2 de cada una de las nuevas zonas que hemos delimitado.
 Genera un archivo con el valor medio de NO2 por cada zona y dia, formado por tantas filas cono dias con el siguiente formato: "fecha;zona1;zona2;zona3;zona4;zona5;zona6".
+
+
+
+### Script 7 - Contaminacion en tiempo real 
+
+En este script se utiliza el fichero de datos con los datos de contaminación del día actual (que se actualiza cada hora entre los minutos 20 y 30).
+
+Lo que hace el script es coger el último valor valido (el de la hora actual) indicado con una 'V' y crear un JSON con el id de la estación , el valor tomado y la hora de actualización:
+
+```javascript
+    {
+        "28079004": {
+            "valor": "00049", 
+            "hora": "15"
+        },
+        "28079008": {
+            "valor": "00056", 
+            "hora": "15"
+        },
+        ...
+    }
+```
+
+Además se complementa con otro script en python que se encarga de subir el JSON y la hora de actualización a un Bucket de S3 de Amazon Web Services.
+
+Para poder simular el funcionamiento de Spark Streaming se usa un script de Shell que programado con el **crontab** de **Ubuntu** ejecuta estos dos scripts cada hora.
+
+
+## Autores
+   - Rodrigo de Miguel - [Github](https://github.com/hunzaGit) - [Linkedin](https://www.linkedin.com/in/rodrigo-de-miguel-gonzalez/)
+   - Cesar Godino - [GitHub](https://github.com/cloudgrey)
+   - Carmen López - [Github](https://github.com/calope03) - [Linkedin](https://www.linkedin.com/in/carmen-l%C3%B3pez-gonzalo/)
