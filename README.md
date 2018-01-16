@@ -48,11 +48,11 @@ Este script coge los datos diarios del año 2017 de todas las estaciones, quedan
 
 Genera 5 archivos con los distintos valores de NO2 de cada estacion por cada zona que delimita la Comunidad de Madrid. Teniendo cada archivo el siguiente formato:
 
-    - **Zona 1**: "fecha;estaciones(004;008;011;035;038;039;047;048;049;050)"
-    - **Zona 2**: "fecha;estaciones(036;040;054)"
-    - **Zona 3**: "fecha;estaciones(016;027;055;057;059;060)"
-    - **Zona 4**: "fecha;estaciones(024;058)"
-    - **Zona 5**: "fecha;estaciones(017;018;056)"
+    - Zona 1: "fecha;estaciones(004;008;011;035;038;039;047;048;049;050)"
+    - Zona 2: "fecha;estaciones(036;040;054)"
+    - Zona 3: "fecha;estaciones(016;027;055;057;059;060)"
+    - Zona 4: "fecha;estaciones(024;058)"
+    - Zona 5: "fecha;estaciones(017;018;056)"
 
 ### Script 5 - [Estaciones por zonas propuestas](https://github.com/hunzaGit/AnalisisAireMadrid/tree/master/Scripts/5%20-%20Estaciones%20por%20zonas%20propuestas)
 
@@ -60,12 +60,12 @@ Este script coge los datos diarios del año 2017 de todas las estaciones, quedan
 
 Genera 6 archivos con los distintos valores de NO2 de cada estacion por cada zona nueva que nosotros hemos delimitado. Teniendo cada archivo el siguiente formato:
     
-    - **Zona 1**: "fecha;estaciones(004;035;038;048)"
-    - **Zona 2**: "fecha;estaciones(011;039;050)"
-    - **Zona 3**: "fecha;estaciones(008;047;049;056)"
-    - **Zona 4**: "fecha;estaciones(016;027;055;057;059)"
-    - **Zona 5**: "fecha;estaciones(017;036;040;054)"
-    - **Zona 6**: "fecha;estaciones(018;024;058;060)"
+    - Zona 1: "fecha;estaciones(004;035;038;048)"
+    - Zona 2: "fecha;estaciones(011;039;050)"
+    - Zona 3: "fecha;estaciones(008;047;049;056)"
+    - Zona 4: "fecha;estaciones(016;027;055;057;059)"
+    - Zona 5: "fecha;estaciones(017;036;040;054)"
+    - Zona 6: "fecha;estaciones(018;024;058;060)"
 
 ### Script 6 - [Media Anual por Zonas propuestas](https://github.com/hunzaGit/AnalisisAireMadrid/tree/master/Scripts/6%20-%20Media%20anual%20por%20zonas%20propuestas)
 
