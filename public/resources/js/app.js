@@ -59,7 +59,7 @@ $(document).ready(function () {
 
     $.ajax({
         type: 'GET',
-        url: 'https://s3.amazonaws.com/bucketcloud18/Datos+Proyecto/Tiempo_real/horario.json',
+        url: 'https://s3.amazonaws.com/bucket-analisis-aire-madrid/Datos+Proyecto/Tiempo_real/horario.json',
         dataType: 'json',
         success: function (data, textStatus, jqXHR) {
 
@@ -97,7 +97,7 @@ $(document).ready(function () {
 
             $.ajax({
                 type: 'GET',
-                url: 'https://s3.amazonaws.com/bucketcloud18/Datos+Proyecto/Tiempo_real/fechaActualizacion.json',
+                url: 'https://s3.amazonaws.com/bucket-analisis-aire-madrid/Datos+Proyecto/Tiempo_real/fechaActualizacion.json',
                 dataType: 'json',
                 success: function (horaUpdate, textStatus, jqXHR) {
 
