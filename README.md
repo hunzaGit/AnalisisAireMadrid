@@ -15,6 +15,12 @@ El proyecto tiene una [pequeña web](https://hunzagit.github.io/AnalisisAireMadr
  - **AWS EC2** t2.nano
  - **Ubuntu** 16.04 
 
+## Tecnologías
+
+<br>
+<img height="450" align="center" src="public/resources/images/Herramientas/Infografia.png">
+<br>
+
 
 ## Scripts
 
