@@ -104,3 +104,7 @@ Para poder simular el funcionamiento de Spark Streaming se usa un script de Shel
    - Rodrigo de Miguel - [Github](https://github.com/hunzaGit) - [Linkedin](https://www.linkedin.com/in/rodrigo-de-miguel-gonzalez/)
    - Cesar Godino - [GitHub](https://github.com/cloudgrey)
    - Carmen López - [Github](https://github.com/calope03) - [Linkedin](https://www.linkedin.com/in/carmen-l%C3%B3pez-gonzalo/)
+
+
+## Agradecimietos
+   - Tomás Muñoz Testón - [Github](https://github.com/tomas-teston) - [Linkedin](https://www.linkedin.com/in/tom%C3%A1s-m-58597672/)
