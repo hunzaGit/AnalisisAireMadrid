@@ -102,3 +102,6 @@ ENV/
 
 # Config de IntelliJ IDEA
 .idea/
+
+# Config AWS
+Scripts/7 - Contaminacion en tiempo real/.aws
