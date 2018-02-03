@@ -17,9 +17,7 @@ El proyecto tiene una [pequeña web](https://hunzagit.github.io/AnalisisAireMadr
 
 ## Tecnologías
 
-<br>
-<img height="450" align="center" src="public/resources/images/Herramientas/Infografia.png">
-
+<img height="500" align="center" src="public/resources/images/Herramientas/Infografia.png">
 
 ## Scripts
 
